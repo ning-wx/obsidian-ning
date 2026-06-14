@@ -1,0 +1,13 @@
+.theme-dark {
+
+  .markdown-source-view img,
+  .markdown-preview-view img {
+    opacity: 0.5;
+    transition: opacity 0.25s linear;
+
+    &:hover {
+      opacity: 1;
+      transition: opacity 0.25s linear;
+    }
+  }
+}

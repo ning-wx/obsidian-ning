@@ -1,0 +1,25 @@
+/* ───────────────────────────────────────────────── */
+/** Search
+──────────────────────────────────────────────────── */
+
+/* move the case-sentivity button to the side when the close button is hidden */
+// body:not(.show-close-buttons, .is-mobile) .search-input-container input:not(:placeholder-shown) {
+//   padding-inline-end: 28px;
+//
+//   &~.input-right-decorator {
+//     inset-inline-end: 4px;
+//   }
+// }
+
+/* ───────────────────────────────────────────────── */
+/** File Explorer
+──────────────────────────────────────────────────── */
+
+.nav-files-container {
+  padding: 0 0 24px;
+}
+
+div.prompt-results {
+  margin-top: 0;
+  padding: 2px;
+}

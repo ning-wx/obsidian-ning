@@ -1,0 +1,13 @@
+import packageJson from '../package.json' with { type: 'json' }
+import manifestJson from '../manifest.json' with { type: 'json' }
+import { readFileSync, writeFileSync } from "fs";
+
+const currentVersion = manifestJson.version
+const newVersion = packageJson.version
+
+function replace(filePath) {
+  const content = readFileSync(filePath, 'utf-8')
+  writeFileSync(filePath, content.replace(currentVersion, newVersion), 'utf-8')
+}
+
+replace('./manifest.json')

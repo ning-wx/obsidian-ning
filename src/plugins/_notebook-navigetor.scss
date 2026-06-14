@@ -1,0 +1,8 @@
+body:not(.is-mobile) {
+  &:is(.layout-minimal, .layout-cupertino) {
+    --nn-theme-list-bg: var(--background-secondary);
+  }
+  &:is(.layout-cards, .layout-border, .layout-frame, .layout-macos) {
+    --nn-theme-nav-bg: var(--background-primary);
+  }
+}

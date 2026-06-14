@@ -1,0 +1,17 @@
+@use "./frame";
+@use "./layout-style";
+@use "./style";
+
+body:not(.is-mobile) {
+  --layout-radius: var(--radius-xl);
+}
+
+body {
+  // --tab-outline-color: transparent;
+  --divider-color: transparent;
+  // --prompt-border-color: transparent;
+}
+
+.modal {
+  border: none;
+}

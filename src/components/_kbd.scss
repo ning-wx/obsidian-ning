@@ -1,0 +1,77 @@
+/* https://discord.com/channels/686053708261228577/702656734631821413/1324464778256580720 */
+
+body {
+  --kbd-body-color: color-mix(
+    in srgb,
+    var(--color-base-10),
+    rgb(var(--mono-rgb-0)) 50%
+  );
+  --kbd-border-color: var(--color-base-40);
+  --kbd-shade-color: var(--color-base-20);
+  --kbd-key-bg: linear-gradient(
+    120deg,
+    var(--color-base-10) 0%,
+    var(--color-base-10) 30%,
+    var(--color-base-40) 200%
+  );
+
+  &.theme-light {
+    --kbd-body-color: var(--color-base-50);
+    --kbd-border-color: var(--color-base-00);
+    --kbd-shade-color: var(--color-base-30);
+    --kbd-key-bg: linear-gradient(
+      310deg,
+      var(--color-base-10) 0%,
+      var(--color-base-10) 30%,
+      var(--color-base-30) 130%
+    );
+  }
+
+  // span.setting-hotkey,
+  // span.prompt-instruction-command,
+  kbd {
+    // border-radius: 2px;
+    background: var(--kbd-key-bg);
+    color: var(--text-normal);
+    display: inline-block;
+    transform: translate(0, -2px);
+    min-width: 1.5em;
+    min-height: 1.5em;
+    text-align: center;
+    padding: 0 0.2em;
+    font-size: 0.7rem;
+
+    box-shadow:
+      inset 0 0 0 0.5px var(--kbd-border-color),
+      -2.25px -0.75px 0 0 var(--kbd-shade-color),
+      0 -0.75px 0 0 var(--kbd-shade-color),
+      -1.5px 0 0 0.75px var(--kbd-body-color),
+      1.5px 0 0 0.75px var(--kbd-body-color),
+      -1.5px 3.75px 0 0.75px var(--kbd-body-color),
+      1.5px 3.75px 0 0.75px var(--kbd-body-color);
+
+    margin: 0 3px 4px;
+
+    /* ===================== */
+
+    // transition: all 0.08s linear;
+    cursor: pointer; /* 改为指针光标，暗示可点击 */
+
+    &:hover {
+      box-shadow:
+        inset 0 0 0 0.5px var(--kbd-border-color),
+        0 1.5px 0 0.75px var(--kbd-body-color);
+      top: 0;
+      transform: translateY(0.75px);
+    }
+
+    &:active {
+      box-shadow:
+        inset 0 0 0 0.5px var(--kbd-border-color),
+        0 0 0 0 var(--kbd-body-color);
+      top: 2.25px;
+      transform: translateY(0);
+      transition: all 0.05s linear;
+    }
+  }
+}

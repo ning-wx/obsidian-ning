@@ -1,0 +1,7 @@
+body:not(.is-mobile) .workspace-split .workspace-tabs:not(.mod-stacked) .workspace-leaf {
+  background-color: transparent;
+}
+
+body:not(.is-mobile).workspace-split.mod-root {
+  background-color: var(--background-secondary);
+}

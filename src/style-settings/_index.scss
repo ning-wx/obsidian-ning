@@ -1,0 +1,91 @@
+@use "./basic";
+// @use "./editor";
+
+// div.workspace-leaf-content[data-type="style-settings"] {
+//   div.view-content {
+//     padding: var(--file-margins);
+//
+//     body.is-mobile & {
+//       padding: var(--size-4-8) var(--size-4-4);
+//     }
+//   }
+//
+//   .view-content
+//     .style-settings-container
+//     .setting-item:not(.setting-item-heading) {
+//     body:not(.is-mobile) & {
+//       flex-direction: row;
+//     }
+//   }
+// }
+//
+// .setting-item.setting-item-heading.style-settings-heading {
+//   padding: var(--size-4-2);
+//   margin: var(--size-4-1) 0;
+//   border-radius: var(--radius-m);
+//   padding-left: var(--size-4-3);
+//
+//   &:hover {
+//     color: var(--highlight-text-normal);
+//     background-color: var(--background-modifier-hover);
+//   }
+// }
+//
+// .style-settings-container {
+//   padding-bottom: unset;
+//
+//   .setting-item {
+//     padding: var(--size-4-2);
+//     padding-left: var(--size-4-6);
+//     border-top: none;
+//
+//     .is-phone & {
+//       margin-top: unset;
+//     }
+//   }
+// }
+//
+// :is(
+//     .setting-item.setting-item-heading.style-settings-heading,
+//     .style-settings-container .style-settings-heading
+//   ) {
+//   border-bottom: unset;
+// }
+//
+// .setting-item-heading .setting-item-description {
+//   padding-left: var(--size-4-4);
+// }
+//
+// .setting-item.setting-item-heading.is-collapsed {
+//   margin-bottom: unset;
+// }
+//
+// .style-settings-container > .setting-item:last-of-type {
+//   padding-bottom: unset;
+//   margin-bottom: var(--size-4-4);
+// }
+//
+// :is(
+//     .style-settings-heading[data-level="0"] + .style-settings-container,
+//     .style-settings-container
+//   ) {
+//   padding-left: var(--size-2-1);
+//   margin-left: var(--size-4-4);
+//   border-left: var(--nav-indentation-guide-width) solid
+//     var(--nav-indentation-guide-color);
+//   transition: var(--animation);
+//
+//   &:hover {
+//     border-left-color: var(--accent-active);
+//   }
+// }
+//
+// body.modal-item-animation {
+//   .style-settings-heading {
+//     transition: var(--animation);
+//
+//     &:hover {
+//       transition: none;
+//     }
+//   }
+// }

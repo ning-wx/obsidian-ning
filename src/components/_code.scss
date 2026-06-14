@@ -1,0 +1,92 @@
+body {
+  --inline-code-padding-vertical: 1px;
+  --inline-code-padding-horizontal: 1px;
+  --code-border-width: 1px;
+  --code-border-color: var(--background-secondary-alt);
+}
+
+/* 阅读模式 */
+.view-content .markdown-reading-view .markdown-preview-sizer div:not(.el-pre) code {
+  color: var(--inline-code-color) !important;
+  background-color: var(--inline-code-bg);
+  border-radius: var(--radius-m);
+  padding: 0em 0.2em;
+}
+
+/* 实时预览 */
+.codeblock-customizer.codeblock-customizer-style-inline-code .markdown-rendered :not(pre)>code.codeblock-customizer-inline-code {
+  color: var(--inline-code-color) !important;
+  background-color: var(--inline-code-bg);
+  border-radius: var(--radius-m);
+  padding: 0em 0.2em;
+}
+
+/* 源码模式 */
+.cm-s-obsidian span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code):not(.obsidian-search-match-highlight),
+.cm-formatting.cm-formatting-code.cm-inline-code {
+  color: var(--inline-code-color);
+  background-color: var(--inline-code-bg);
+  border-radius: var(--radius-m);
+  padding: 0em 0.2em;
+}
+
+@function prefix-selectors($list) {
+  $result: null;
+
+  @each $item in $list {
+    $dot-variant: ".token." + $item;
+    $cm-variant: ".cm-" + $item;
+
+    @if $result ==null {
+      $result: #{$dot-variant},
+        #{$cm-variant};
+    }
+
+    @else {
+      $result: #{$result},
+        #{$dot-variant},
+        #{$cm-variant};
+    }
+  }
+
+  @return $result;
+}
+
+body {
+
+  code .token,
+  .HyperMD-codeblock *,
+  .codeblock-customizer-inline-code-wrapper * {
+    font-weight: normal;
+
+    &:is(#{prefix-selectors(("keyword", "tag"))}) {
+      font-weight: bold;
+    }
+  }
+
+  // &.theme-dark :is(code, .HyperMD-codeblock, [data-language="templater"]) {
+  //   --code-comment: #8c949d;
+  //   --code-string: #fc6a5d;
+  //   --code-constant: #d0bf69;
+  //   --code-keyword: #ff7ab2;
+  //   --code-tag: #ff7ab2;
+  //   --code-important: #ff7ab2;
+  //   --code-function: #5dd8ff;
+  //   --code-operator: #a167e6;
+  //   --code-punctuation: #72bfae;
+  //   --code-property: #83c9bc;
+  //   --code-value: #d0bf69;
+  // }
+  &.theme-light :is(code, .HyperMD-codeblock, [data-language="templater"]) {
+    --code-normal: #383a42;
+    --code-comment: var(--text-faint);
+    --code-function: #b76b02;
+    --code-important: #b76b02;
+    --code-keyword: #e45749;
+    --code-property: #62afef;
+    --code-punctuation: #383a42;
+    --code-string: #0d97b3;
+    --code-tag: #e45749;
+    --code-value: #a626a4;
+  }
+}

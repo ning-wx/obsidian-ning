@@ -1,0 +1,137 @@
+:is(.wide-dataview-global, .callout-wide-global, .wide-backlinks-global)
+  .markdown-source-view.is-readable-line-width,
+:is(.wide-dataview-global, .callout-wide-global, .wide-backlinks-global)
+  .markdown-preview-view.is-readable-line-width,
+:is(
+    .wide-dataview,
+    .callout-wide,
+    .wide-backlinks
+  ).markdown-source-view.is-readable-line-width,
+:is(
+    .wide-dataview,
+    .callout-wide,
+    .wide-backlinks
+  ).markdown-preview-view.is-readable-line-width {
+  container-name: content-view;
+  container-type: inline-size;
+}
+
+body {
+  --wide-dv-left-ev-adj: -4rem;
+  --wide-dv-min-left-ev: 0.5rem;
+  --wide-dv-width-ev: calc(var(--file-line-width) - var(--wide-dv-left-ev-adj));
+}
+body:has(.cm-gutters) {
+  --wide-dv-left-ev-adj: 1.7rem;
+  --wide-dv-min-left-ev: 6.5rem;
+}
+@container content-view (width > 50px) {
+  :is(.wide-dataview-global, .wide-dataview)
+    .cm-preview-code-block:has(> .block-language-dataview),
+  :is(.wide-dataview-global, .wide-dataview)
+    .cm-preview-code-block:has(> .block-language-dataviewjs) {
+    width: calc(100cqi - 4rem);
+    margin-left: calc(
+      max(100cqi - var(--wide-dv-width-ev), var(--wide-dv-min-left-ev)) / 2 * -1
+    ) !important;
+  }
+  :is(.wide-dataview-global, .wide-dataview)
+    div:has(> .block-language-dataview),
+  :is(.wide-dataview-global, .wide-dataview)
+    div:has(> .block-language-dataviewjs) {
+    width: 100cqi;
+    margin-left: calc(
+      max(100cqi - var(--file-line-width), 1rem) / 2 * -1
+    ) !important;
+  }
+}
+
+body {
+  --wide-co-left-ev-adj: -3.8rem;
+  --wide-co-min-left-ev: 0.5rem;
+  --wide-co-width-ev-adj: 4rem;
+  --wide-co-width-ev: calc(var(--file-line-width) - var(--wide-co-left-ev-adj));
+}
+body:has(.cm-gutters) {
+  --wide-co-left-ev-adj: 1.7rem;
+  --wide-co-min-left-ev: 6.5rem;
+}
+@container content-view (width > 50px) {
+  :is(.callout-wide-global, .callout-wide) .cm-embed-block.cm-callout {
+    width: calc(100cqi - var(--wide-co-width-ev-adj));
+    margin-left: calc(
+      max(100cqi - var(--wide-co-width-ev), var(--wide-co-min-left-ev)) / 2 * -1
+    ) !important;
+  }
+  :is(.callout-wide-global, .callout-wide)
+    .markdown-preview-sizer
+    > div:has(> .callout) {
+    width: 100cqi;
+    margin-left: calc(
+      max(100cqi - var(--file-line-width), 1rem) / 2 * -1
+    ) !important;
+  }
+}
+
+body {
+  --wide-bl-left-ev-adj: 4rem;
+  --wide-bl-width-ev: calc(var(--file-line-width) + var(--wide-bl-left-ev-adj));
+}
+@container content-view (width > 50px) {
+  :is(
+      .wide-backlinks-global .markdown-source-view,
+      .wide-backlinks.markdown-source-view
+    )
+    .embedded-backlinks {
+    width: calc(100cqi - 3.5rem);
+    margin-left: calc(max(100cqi - var(--wide-bl-width-ev), 1rem) / 2 * -1);
+  }
+  :is(
+      .wide-backlinks-global .markdown-preview-view,
+      .wide-backlinks.markdown-preview-view
+    )
+    .embedded-backlinks {
+    width: calc(100cqi - 0rem);
+    margin-left: calc(max(100cqi - var(--file-line-width), 1rem) / 2 * -1);
+  }
+}
+
+// ============
+
+body {
+  --wide-code-left-ev-adj: -3.8rem;
+  --wide-code-min-left-ev: 0.5rem;
+  --wide-code-width-ev-adj: 4rem;
+  --wide-code-width-ev: calc(
+    var(--file-line-width) - var(--wide-code-left-ev-adj)
+  );
+}
+body:has(.cm-gutters) {
+  --wide-code-left-ev-adj: 1.7rem;
+  --wide-code-min-left-ev: 6.5rem;
+}
+@container content-view (width > 50px) {
+  /* 阅读模式 - 适配你提供的HTML结构 */
+  :is(.wide-codeblock-global, .wide-codeblock)
+    .markdown-preview-sizer
+    > div.el-pre {
+    width: 100cqi;
+    margin-left: calc(
+      max(100cqi - var(--file-line-width), 1rem) / 2 * -1
+    ) !important;
+  }
+
+  /* 确保pre元素也跟随变宽 */
+  :is(.wide-codeblock-global, .wide-codeblock) .el-pre pre {
+    width: 100% !important;
+  }
+
+  /* 编辑模式的选择器保持不变，但可能也需要调整 */
+  :is(.wide-codeblock-global, .wide-codeblock) .cm-embed-block:has(pre) {
+    width: calc(100cqi - var(--wide-code-width-ev-adj)) !important;
+    margin-left: calc(
+      max(100cqi - var(--wide-code-width-ev), var(--wide-code-min-left-ev)) /
+        2 * -1
+    ) !important;
+  }
+}

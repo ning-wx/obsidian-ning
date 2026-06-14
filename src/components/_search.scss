@@ -1,0 +1,20 @@
+.suggestion-item.mod-complex .suggestion-highlight {
+  color: var(--color-orange);
+}
+
+.search-result-file-match {
+  background-color: var(--color-base-15);
+}
+
+.search-result-file-matched-text {
+  color: var(--text-highlight-fg) !important;
+  background-color: var(--text-highlight-bg);
+}
+
+.search-result:not(.is-collapsed) .search-result-file-title {
+  color: var(--nav-item-color-active);
+}
+
+.markdown-rendered mark {
+  color: var(--text-highlight-fg) !important;
+}

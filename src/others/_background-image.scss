@@ -1,0 +1,341 @@
+/* @settings
+name: Defult Background
+id: anuppuccin-custom-background
+settings:
+
+-
+  id: anp-custom-background-header
+  title: Background
+  description: 适用于默认主题，配合卡片布局效果更佳
+  type: heading
+  level: 1
+  collapsed: true
+-
+  id: custom-background-image-toggle
+  title: Enable Custom Background (WIP)
+  description: Not compatible with colorful frame
+  type: class-toggle
+-
+  id: anp-custom-background-light-header
+  title: Light Mode
+  description: 
+  type: heading
+  level: 2
+  collapsed: true
+-
+  id: anp-background-image-light
+  title: Custom Background Image URL
+  description: 'Formatted as url("https://link-to-image.png")'
+  type: variable-text
+  default: url("https://link-to-image.png")
+-
+  id: anp-custom-bg-brightness-light
+  title: Background brightness
+  type: variable-number-slider
+  min: 0
+  max: 2
+  step: 0.05
+  default: 0.7
+-
+  id: anp-custom-bg-blur-light
+  title: Background blur
+  type: variable-number-slider
+  min: 0
+  max: 20
+  step: 1
+  default: 5
+  format: px
+-
+  id: anp-custom-bg-card-fg-opacity-light
+  title: Container opacity
+  type: variable-number-slider
+  min: 0
+  max: 1
+  step: 0.05
+  default: 0.7
+
+-
+  id: anp-custom-background-dark-header
+  title: Dark Mode
+  description: 
+  type: heading
+  level: 2
+  collapsed: true
+-
+  id: anp-background-image-dark
+  title: Custom Background Image URL
+  description: 'Formatted as url("https://link-to-image.png")'
+  type: variable-text
+  default: url("https://link-to-image.png")
+-
+  id: anp-custom-bg-brightness-dark
+  title: Background brightness
+  type: variable-number-slider
+  min: 0
+  max: 1
+  step: 0.05
+  default: 0.7
+-
+  id: anp-custom-bg-blur-dark
+  title: Background blur
+  type: variable-number-slider
+  min: 0
+  max: 20
+  step: 1
+  default: 5
+  format: px
+-
+  id: anp-custom-bg-card-fg-opacity-dark
+  title: Container opacity
+  type: variable-number-slider
+  min: 0
+  max: 1
+  step: 0.05
+  default: 0.4
+*/
+
+body.theme-light {
+  --anp-background-image: var(--anp-background-image-light);
+  --anp-custom-bg-brightness: var(--anp-custom-bg-brightness-light);
+  --anp-custom-bg-blur: var(--anp-custom-bg-blur-light);
+  --anp-custom-bg-card-fg-opacity: var(--anp-custom-bg-card-fg-opacity-light);
+  --background-base: var(--mono-rgb-0);
+  --background-mantel: var(--mono-rgb-100);
+}
+
+body.theme-dark {
+  --anp-background-image: var(--anp-background-image-dark);
+  --anp-custom-bg-brightness: var(--anp-custom-bg-brightness-dark);
+  --anp-custom-bg-blur: var(--anp-custom-bg-blur-dark);
+  --anp-custom-bg-card-fg-opacity: var(--anp-custom-bg-card-fg-opacity-dark);
+  --background-base: var(--mono-rgb-0);
+  --background-mantel: var(--mono-rgb-100);
+}
+
+.custom-background-image-toggle {
+  --card-background-color: transparent;
+  --card-foreground-color: rgba(var(--background-base),
+      var(--anp-custom-bg-card-fg-opacity, 0.4));
+  --tab-inactive-color: rgba(var(--background-mantle),
+      var(--anp-custom-bg-card-fg-opacity, 0.8));
+  --code-background: var(--card-foreground-color);
+
+  .app-container {
+    background: var(--anp-background-image,
+        url("https://w.wallhaven.cc/full/7p/wallhaven-7p25v3.jpg"));
+    background-size: cover;
+    background-color: transparent;
+  }
+
+  .horizontal-main-container {
+    backdrop-filter: brightness(var(--anp-custom-bg-brightness, 0.5)) blur(var(--anp-custom-bg-blur, 5px));
+    background-color: transparent;
+  }
+
+  .workspace {
+    background: transparent;
+
+    .workspace-split {
+      background-color: var(--tab-inactive-color);
+    }
+  }
+
+  //   &.anp-card-layout .workspace-split.mod-root .view-content {
+  //     background: transparent;
+  //   }
+  .workspace-tabs:not(.mod-stacked) {
+    --tab-background: var(--tab-inactive-color);
+    --tab-background-active: var(--card-foreground-color);
+    --tab-background-inactive: var(--tab-inactive-color);
+  }
+
+  .nav-folder.mod-root>.nav-folder-title {
+    background-color: var(--tab-inactive-color);
+  }
+
+  //   .canvas-wrapper,
+  //   .mod-macos.is-hidden-frameless:not(.is-popout-window)
+  //     .sidebar-toggle-button.mod-right,
+  //   &:not(.layout-cards).mod-macos.is-hidden-frameless:not(.is-popout-window)
+  //     .sidebar-toggle-button.mod-right,
+  //   &:is(.layout-cards) .workspace-ribbon.mod-left:before,
+  //   &:is(.layout-cards) .workspace-tab-header-container,
+  //   .workspace-split.mod-root {
+  //     background-color: transparent;
+  //   }
+  // & .workspace-tab-header-container,
+  //   &:not(.layout-cards, .layout-minimal) .workspace-tabs .workspace-leaf,
+  & .workspace-split.mod-root .view-content,
+  & .workspace-ribbon,
+  & .workspace-ribbon.mod-left:before,
+  & .view-header,
+  &.is-focused .workspace-leaf.mod-active .view-header {
+    background-color: var(--card-foreground-color);
+  }
+
+  &.is-focused .workspace-leaf.mod-active .view-header,
+  .workspace-ribbon {
+    background: transparent;
+  }
+
+  .workspace-fake-target-overlay:not(.is-in-sidebar) .workspace-tabs:not(.mod-stacked) .workspace-leaf,
+  .mod-root .workspace-tabs:not(.mod-stacked) .workspace-leaf,
+  .view-header,
+  .is-focused .workspace-leaf.mod-active .view-header {
+    background-color: transparent;
+  }
+
+  .view-header-title-container:not(.mod-at-end):after {
+    display: none;
+  }
+
+  .kanban-plugin .kanban-plugin__lane button:hover {
+    background-color: var(--card-foreground-color);
+  }
+
+  & {
+    .status-bar {
+      background: var(--card-foreground-color);
+      backdrop-filter: brightness(var(--anp-custom-bg-brightness, 0.5)) blur(var(--anp-custom-bg-blur, 5px));
+    }
+  }
+
+
+  /* ====================== */
+  //   &:is(.layout-cards) .workspace-split .mod-root,
+  &:is(.layout-cards) .workspace-tab-header-container {
+    background-color: var(--tab-inactive-color);
+  }
+
+
+
+  /* ====================== layout-frame ====================== */
+  &:is(.layout-frame) {
+    .workspace {
+      background-color: transparent;
+    }
+
+    .workspace-ribbon,
+    .workspace-split {
+      background-color: var(--card-foreground-color);
+    }
+
+    .mod-sidedock .workspace-sidedock-vault-profile {
+      background-color: transparent;
+    }
+  }
+
+}
+
+/* 关闭区域背景 */
+.is-hidden-frameless:not(.is-fullscreen).is-focused .titlebar-button-container.mod-right {
+  background-color: transparent;
+}
+
+.is-hidden-frameless:not(.is-fullscreen) .titlebar-button-container.mod-right {
+  background-color: transparent;
+}
+
+body.custom-background-image-toggle:not(.is-mobile) {
+  --lorenz-flow-opacity: var(--anp-custom-bg-card-fg-opacity);
+  --lorenz-flow-primary: rgb(var(--mono-rgb-0), var(--lorenz-flow-opacity));
+  --lorenz-flow-secondary: rgb(var(--mono-rgb-0), var(--lorenz-flow-opacity));
+
+  --file-header-background-focused: transparent;
+  --file-header-background: transparent;
+  --tab-container-background: transparent;
+  --titlebar-background: transparent;
+  --titlebar-background-focused: transparent;
+
+  .workspace {
+    padding: 4px;
+    background-color: var(--lorenz-flow-secondary);
+  }
+
+  .workspace-split.mod-root .view-content {
+    background-color: transparent;
+  }
+
+  .workspace-ribbon,
+  .workspace-split {
+    margin: 4px;
+    height: unset;
+    background-color: var(--lorenz-flow-secondary);
+    border-radius: var(--layout-radius);
+    border: 1px solid var(--background-modifier-border-hover);
+    overflow: hidden;
+  }
+
+  .mod-root {
+    overflow: hidden;
+  }
+
+  .workspace-ribbon.mod-left .sidebar-toggle-button {
+    position: relative;
+    display: flex;
+    height: var(--header-height);
+    padding: 8px;
+    width: unset;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &:not(.mod-macos):not(.tab-top-left-stacked).css-settings-manager .workspace-ribbon.workspace-ribbon.mod-left .sidebar-toggle-button {
+    height: calc(var(--header-height) - 16px);
+  }
+
+  // macOs fix
+  &.mod-macos .workspace-ribbon.mod-left {
+    // --ribbon-width: 74px;
+    padding-top: var(--header-height);
+  }
+
+  // Windows & Linux fix
+  &:not(.mod-macos).is-frameless.is-hidden-frameless .titlebar {
+    height: var(--header-height);
+    top: 8px;
+    right: 8px;
+
+    .titlebar-button-container.mod-right {
+      border-top-right-radius: var(--layout-radius);
+      overflow: hidden;
+    }
+  }
+
+  .mod-sidedock {
+    .workspace-sidedock-vault-profile {
+      background-color: transparent;
+    }
+  }
+
+  // Status bar
+  & .status-bar {
+    right: 8px;
+    bottom: 8px;
+  }
+
+  // ----------------------------------------------------------------
+
+  // Style Settings: Background contrast fix
+  &.theme-light.contrast-light-vivid {
+
+    .workspace-ribbon,
+    .workspace-split {
+      border-color: #424242;
+    }
+
+    .mod-root .workspace-tab-header-container::before {
+      background-color: var(--lorenz-flow-secondary);
+    }
+  }
+
+  // Style Settings: Status bar fix
+  &.status-bar-full .workspace {
+    padding-bottom: 0;
+
+    .workspace-ribbon,
+    .workspace-split {
+      margin-bottom: 0;
+    }
+  }
+}

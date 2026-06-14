@@ -1,0 +1,37 @@
+body
+  div.el-ul
+  > ul.has-list-bullet
+  > li
+  > ul.has-list-bullet
+  > li
+  > span.list-bullet::after,
+.HyperMD-list-line.HyperMD-list-line-2.cm-line
+  span.cm-hmd-list-indent
+  ~ span.cm-formatting
+  .list-bullet::after {
+  background-color: transparent;
+  border: 1px solid var(--list-marker-color);
+  box-sizing: border-box;
+  width: var(--list-bullet-size);
+  height: var(--list-bullet-size);
+}
+
+body
+  div.el-ul
+  > ul.has-list-bullet
+  > li
+  > ul.has-list-bullet
+  > li
+  > ul.has-list-bullet
+  > li
+  > span.list-bullet::after,
+.HyperMD-list-line.HyperMD-list-line-3.cm-line
+  span.cm-hmd-list-indent
+  ~ span.cm-formatting
+  .list-bullet::after {
+  --list-bullet-radius: 0;
+  --list-bullet-border: none;
+  width: var(--list-bullet-size);
+  height: var(--list-bullet-size);
+  background-color: var(--list-marker-color);
+}

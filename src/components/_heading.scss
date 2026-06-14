@@ -1,0 +1,103 @@
+@use "../utils" as *;
+@use "sass:list";
+@use "sass:string";
+
+$headings: ":is(h1, h2, h3, h4, h5, h6)";
+
+$default-sizes: 1.6, 1.5, 1.4, 1.3, 1.2, 1.1;
+$default-weights: 750, 700, 600, 550, 550, 500;
+
+body {
+  @for $i from 1 through 6 {
+    $size: list.nth($default-sizes, $i);
+    $weight: list.nth($default-weights, $i);
+    --h#{$i}-size: calc(
+      var(--font-text-size) * var(--setting-h#{$i}-size, #{$size})
+    );
+    --h#{$i}-weight: var(--setting-h#{$i}-weight, #{$weight});
+    --h#{$i}-font: var(--setting-h#{$i}-font, var(--font-text));
+    --h#{$i}-line-height: calc(var(--line-height-normal) * var(--h#{$i}-size));
+  }
+}
+
+body .cm-contentContainer :first-child .cm-formatting.cm-formatting-header {
+  color: var(--color-base-50);
+  font-weight: 400;
+  font-size: var(--font-text-size) !important;
+  line-height: var(--line-height-normal);
+}
+
+@for $i from 1 through 6 {
+  $selector: ":is(.HyperMD-header-#{$i}, .markdown-rendered h#{$i})";
+
+  #{$selector} {
+    --h-indicator-content: "H#{$i}";
+  }
+
+  .link-heading #{$selector} {
+    --link-color-rgb: var(--h#{$i}-color-rgb);
+    --link-color-underline: var(--h#{$i}-color);
+    --link-external-color-rgb: var(--h#{$i}-color-rgb);
+    --link-external-color-underline: var(--h#{$i}-color);
+    --link-text-size: var(--h#{$i}-size);
+  }
+}
+
+.markdown-source-view.mod-cm6 .HyperMD-header .cm-fold-indicator {
+  position: unset;
+  .collapse-indicator {
+    inset-inline-start: -1.4rem;
+    inset-inline-end: unset;
+  }
+}
+
+@include use-no-plugin(":not(.heading-indicator-disable)") {
+  $live-preview-base: ".markdown-source-view.mod-cm6.is-live-preview";
+  $reading-view-base: "div.markdown-reading-view > div > div > div";
+
+  $live-preview-header: "#{$live-preview-base} .HyperMD-header";
+  $reading-view-header: "#{$reading-view-base} > #{$headings}";
+  $live-preview-header-collapsed: "#{$live-preview-base} .HyperMD-header:has(>.is-collapsed)";
+  $reading-view-header-collapsed: "#{$reading-view-base}.is-collpased > #{$headings}";
+
+  $normal-selector: ":is(#{$live-preview-header}, #{$reading-view-header})";
+  $collapsed-selector: ":is(#{$live-preview-header-collapsed}, #{$reading-view-header-collapsed})";
+
+  #{$normal-selector} {
+    --h-indicator-color: transparent;
+    position: relative;
+    &::before {
+      content: var(--h-indicator-content, "");
+      position: absolute;
+      font-size: calc(var(--font-text-size) * 0.7);
+      left: -1.2rem;
+      color: var(--h-indicator-color, inherit);
+      text-decoration: var(--h-indicator-decoration, none);
+      pointer-events: none;
+    }
+    &:hover {
+      --h-indicator-color: inherit;
+    }
+    :is(.collapse-indicator) {
+      opacity: 0 !important;
+      padding-inline-start: var(--size-4-2);
+    }
+  }
+
+  #{$collapsed-selector} {
+    --h-indicator-color: inherit;
+  }
+
+  &.heading-indicator-fixed {
+    #{$normal-selector} {
+      --h-indicator-color: var(--text-faint);
+      &:hover {
+        --h-indicator-color: inherit;
+      }
+    }
+    #{$collapsed-selector} {
+      --h-indicator-color: inherit;
+      --h-indicator-decoration: underline;
+    }
+  }
+}

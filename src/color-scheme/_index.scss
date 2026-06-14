@@ -1,0 +1,19 @@
+@use "./love";
+// @use "./gruvbox";
+
+body {
+  --color-gray: rgb(var(--callout-quote));
+
+  $colors: "red", "orange", "yellow", "green", "cyan", "blue", "purple", "pink",
+    "gray", "accent";
+
+  @each $color1 in $colors {
+    @each $color2 in $colors {
+      @if $color1 !=$color2 {
+        --color-#{$color1}-#{$color2}: color-mix(in srgb,
+          var(--color-#{$color1}),
+          var(--color-#{$color2}));
+      }
+    }
+  }
+}

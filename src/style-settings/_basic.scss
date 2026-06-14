@@ -1,0 +1,47 @@
+/* @settings
+
+name: 📦 Ning
+id: ning-editor
+
+settings:
+  -
+    id: workspace
+    title: Workspace
+    type: heading
+    level: 2
+
+  -
+    id: layout-style
+    title: Layout Style
+    description: Select the workspace layout style.
+    type: class-select
+    default: layout-frame
+    options:
+      -
+        label: Frame
+        value: layout-frame
+
+  -
+    id: heading
+    title: Heading
+    type: heading
+    level: 2
+
+  -
+    id: heading-style
+    title: Heading Indicator
+    description: Display heading level indicators.
+    type: class-select
+    default: heading-indicator-auto
+    options:
+      -
+        label: Disable
+        value: heading-indicator-disable
+      -
+        label: Auto Hide
+        value: heading-indicator-auto
+      -
+        label: Fixed
+        value: heading-indicator-fixed
+
+*/

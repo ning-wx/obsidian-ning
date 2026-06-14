@@ -1,0 +1,48 @@
+@use "./base";
+@use "./callout";
+// @use "./checkboxes";
+@use "./code";
+@use "./heading";
+@use "./image-filters";
+@use "./kbd";
+@use "./link";
+@use "./list";
+@use "./meta";
+@use "./quote";
+@use "./search";
+@use "./tab";
+@use "./table";
+
+// 阅读模式下将已完成任务移动到列表底部，实际位置不变
+ul {
+  display: flex;
+  flex-direction: column;
+}
+
+ul>li.task-list-item[data-task="x" i] {
+  order: 1;
+}
+
+//己完成任务降低不透明度
+
+ul>li.task-list-item[data-task="x" i] {
+  opacity: 0.6;
+
+  & & {
+    opacity: 1;
+  }
+}
+
+// body.theme-light {
+//   -webkit-font-smoothing: antialiased;
+// }
+
+span[data-col-prev][style*="--c:"]::before {
+  content: "";
+  display: inline-block;
+  background-color: var(--c);
+  width: 1em;
+  aspect-ratio: 1/1;
+  border-radius: 0.2em;
+  transform: translate(0, 2px);
+}

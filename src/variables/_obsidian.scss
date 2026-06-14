@@ -1,0 +1,52 @@
+body {
+  // --file-line-width: 900px;
+  --nav-item-size: 14px;
+
+
+  --h1-font: "Fraunces 72pt";
+  --h2-font: "Fraunces 72pt";
+  --h3-font: "Fraunces 72pt";
+  --h4-font: "Fraunces 72pt";
+  --h5-font: "Fraunces 72pt";
+  --h6-font: "Fraunces 72pt";
+
+
+  // radius
+  --radius-s: 3px;
+  --radius-m: 6px;
+  --radius-l: 10px;
+  --radius-xl: 15px;
+
+  // callout
+  --callout-border-opacity: 0.8;
+  --callout-radius: 6px;
+  --prompt-width: calc(var(--file-line-width) - 50px);
+
+  // code
+  --code-radius: 8px;
+
+  --checkbox-radius: 50%;
+
+  // tag
+  --tag-radius: 15px;
+  --tag-size: 0.8em;
+  --tag-padding-y: 0.1em;
+  --tag-background: transparent;
+  --tag-background-hover: transparent;
+  --tag-color: var(--text-muted);
+  --tag-border-width: 1px;
+  --tag-border-color: var(--background-modifier-border);
+  --tag-border-color-hover: var(--background-modifier-border-hover);
+  --tag-color-hover: var(--text-normal);
+}
+
+
+// .theme-dark {
+//   --shadow-xs: 0 1px 6px rgba(0, 0, 0, 0.045), 0 4px 24px rgba(0, 0, 0, 0.195), var(--shadow-edges);
+//   --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3);
+//   --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 30px 90px rgba(0, 0, 0, 0.2);
+// }
+
+.workspace .mod-root .workspace-tab-header-inner::after {
+  display: none;
+}

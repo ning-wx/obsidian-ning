@@ -1,0 +1,175 @@
+@media screen,
+print {
+  body {
+    // --table-header-color: var(--color-yellow);
+    --table-text-size: var(--font-small);
+
+    --table-add-button-border-width: 0;
+    --table-header-border-color: transparent;
+
+    --embed-block-shadow-hover: none;
+  }
+
+  body:not(.table-fit-content) table,
+  body:not(.table-fit-content) .markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper {
+    min-width: 100%;
+  }
+
+  body.table-fit-content .el-table,
+  body.table-fit-content .markdown-source-view.mod-cm6 .cm-table-widget {
+    display: flex;
+    justify-content: center;
+  }
+
+  :root table {
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+
+  blockquote,
+  .callout,
+  .el-table,
+  .cm-table-widget,
+  .block-language-dataview,
+  .block-language-dataviewjs,
+  .block-language-datacorejsx {
+    --table-border-color: var(--background-modifier-border-hover);
+
+    table {
+      position: relative;
+
+      .table-cell-wrapper:active,
+      .table-cell-wrapper:focus,
+      .table-cell-wrapper:focus-within {
+        background-color: var(--background-modifier-hover);
+      }
+
+      th,
+      td {
+        -electron-corner-smoothing: var(--corner-smoothing);
+      }
+
+      >thead:only-child,
+      >tbody {
+        --table-header-border-color: var(--table-border-color);
+        background-color: var(--code-background);
+        position: relative;
+      }
+
+      >thead:not(:only-child)>tr>th,
+      >thead:not(:only-child)>tr>th .table-cell-wrapper {
+        border-radius: var(--radius-m);
+      }
+
+      >tbody>tr:not(:last-child)>td {
+        border-bottom: none;
+      }
+
+      >thead>tr>th:not(:last-child),
+      >tbody>tr>td:not(:last-child) {
+        border-right: none;
+      }
+
+      > :is(thead, tbody)>tr:first-child> :is(th, td):first-child,
+      > :is(thead, tbody)>tr:first-child> :is(th, td):first-child .table-cell-wrapper {
+        border-top-left-radius: var(--radius-m);
+      }
+
+      > :is(thead, tbody)>tr:first-child> :is(th, td):last-child,
+      > :is(thead, tbody)>tr:first-child> :is(th, td):last-child .table-cell-wrapper {
+        border-top-right-radius: var(--radius-m);
+      }
+
+      > :is(thead, tbody)>tr:last-child> :is(th, td):first-child,
+      > :is(thead, tbody)>tr:last-child> :is(th, td):first-child .table-cell-wrapper {
+        border-bottom-left-radius: var(--radius-m);
+      }
+
+      > :is(thead, tbody)>tr:last-child> :is(th, td):last-child,
+      > :is(thead, tbody)>tr:last-child> :is(th, td):last-child .table-cell-wrapper {
+        border-bottom-right-radius: var(--radius-m);
+      }
+
+      &[dir="rtl"] {
+
+        >thead>tr>th:not(:last-child),
+        >tbody>tr>td:not(:last-child) {
+          border-left: none;
+        }
+
+        > :is(thead, tbody)>tr:first-child> :is(th, td):first-child,
+        > :is(thead, tbody)>tr:first-child> :is(th, td):first-child .table-cell-wrapper {
+          border-top-right-radius: var(--radius-m);
+        }
+
+        > :is(thead, tbody)>tr:first-child> :is(th, td):last-child,
+        > :is(thead, tbody)>tr:first-child> :is(th, td):last-child .table-cell-wrapper {
+          border-top-left-radius: var(--radius-m);
+        }
+
+        > :is(thead, tbody)>tr:last-child> :is(th, td):first-child,
+        > :is(thead, tbody)>tr:last-child> :is(th, td):first-child .table-cell-wrapper {
+          border-bottom-right-radius: var(--radius-m);
+        }
+
+        > :is(thead, tbody)>tr:last-child> :is(th, td):last-child,
+        > :is(thead, tbody)>tr:last-child> :is(th, td):last-child .table-cell-wrapper {
+          border-bottom-left-radius: var(--radius-m);
+        }
+      }
+    }
+  }
+
+  .cm-html-embed th,
+  .markdown-rendered th,
+  .cm-html-embed td,
+  .markdown-rendered td,
+  .markdown-source-view.mod-cm6 .cm-table-widget .table-cell-wrapper {
+    padding: 6px;
+  }
+
+  .cm-html-embed th,
+  .markdown-rendered th {
+    text-align: var(--table-text-align-header);
+  }
+
+  .cm-html-embed td,
+  .markdown-rendered td {
+    text-align: var(--table-text-align-body);
+  }
+
+  .dataview,
+  .block-language-datacorejsx {
+    &.table-view-table {
+      &::before {
+        border: none;
+      }
+
+      tr:first-child>td {
+        border-top: none;
+      }
+    }
+
+    &.table-view-table>thead>tr>th,
+    .datacore-table-header-cell {
+      border-bottom: none;
+      font-weight: var(--table-header-weight);
+      font-size: var(--table-header-size);
+    }
+
+    &.table-view-table>tbody>tr:not(:only-child)>td {
+      max-width: 20em;
+    }
+
+    &.dataview-error-box {
+      border: none;
+      border-radius: var(--radius-m);
+      background-color: var(--background-secondary);
+      min-height: 80px;
+    }
+
+    .dc-paging-control-page {
+      padding: 0 !important;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+@use "./background-image";
+@use "./block-width";
+@use "./cssclasses";
+@use "./font";
+@use "./wide-views";
+
+// 启用连体  == ->
+.view-content>.markdown-source-view.mod-cm6 .cm-scroller,
+.markdown-preview-view,
+.markdown-rendered {
+  font-feature-settings:
+    "dlig" 1,
+    "ss01" 1;
+}
+
+// 隐藏其他列表属性的选项弹窗，除了cssclasses
+// .suggestion-container.mod-property-value:not(
+//     [data-property-key="cssclasses"]
+//   ):not([data-property-key="tags"]) {
+//   display: none;
+// }
+
+// base数字类型左对齐
+.bases-table-cell .metadata-input-number,
+.bases-table-cell[data-property-type="number"] {
+  justify-content: initial;
+  text-align: initial;
+}

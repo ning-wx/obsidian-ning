@@ -1,0 +1,92 @@
+body:not(.is-mobile) {
+  &.colorful-frame {
+    .mod-root .mod-top.workspace-tabs:not(.mod-stacked) {
+      --tab-background: var(--frame-outline-color);
+      --tab-outline-width: 1px;
+
+      .workspace-tab-header:hover,
+      .workspace-tab-header.is-active {
+        .workspace-tab-header-inner-close-button {
+          color: var(--minimal-tab-text-color-active);
+        }
+      }
+    }
+  }
+
+  &.mod-root .workspace-tab-header-container:hover {
+    --tab-outline-width: 0px;
+  }
+
+  .mod-root {
+    --tab-container-background: var(--background-primary);
+  }
+
+  .mod-root .workspace-tabs:not(.mod-stacked) {
+    --tab-background: var(--background-modifier-hover);
+    --tab-height: calc(var(--header-height) - 14px);
+    --tab-outline-width: 0px;
+
+    .workspace-tab-header::before,
+    .workspace-tab-header::after,
+    .workspace-tab-header-inner::after {
+      display: none;
+    }
+
+    .workspace-tab-header-container-inner {
+      align-items: center;
+      margin: 0;
+      padding: 2px var(--size-4-2) 0 var(--size-4-1);
+    }
+
+    .workspace-tab-header-inner-title {
+      text-overflow: ellipsis;
+      -webkit-mask-image: none;
+    }
+
+    .workspace-tab-header {
+      background: transparent;
+      border-radius: 5px;
+      border: none;
+      box-shadow: none;
+      height: var(--tab-height);
+      margin-left: var(--size-4-1);
+      padding: 0;
+
+      &:hover {}
+
+      &.is-active {
+        .workspace-tab-header-inner-title {
+          color: var(--tab-text-color-active);
+        }
+      }
+
+      &:hover,
+      &.is-active.mod-active {
+        opacity: 1;
+        background-color: var(--tab-background);
+      }
+    }
+
+    .workspace-tab-header-new-tab {
+      margin-inline-end: 0;
+    }
+
+    .workspace-tab-header-inner {
+      padding: 0 var(--size-4-1) 0 var(--size-4-2);
+      border: 1px solid transparent;
+    }
+
+    .workspace-tab-header:not(.is-active):hover {
+      .workspace-tab-header-inner {
+        background-color: transparent;
+      }
+    }
+
+    .workspace-tab-header:not(:hover):not(.mod-active),
+    .workspace-tab-header.is-active:not(.mod-active) {
+      .workspace-tab-header-inner {
+        border: 1px solid var(--tab-outline-color);
+      }
+    }
+  }
+}

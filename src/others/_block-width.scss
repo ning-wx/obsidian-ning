@@ -1,0 +1,130 @@
+// body {
+//   --file-line-width: var(--line-width);
+//   --line-width: 700px;
+// }
+
+body {
+  --line-width-wide: 50rem;
+
+  .wide {
+    --file-line-width: min(80cqw, var(--line-width-wide));
+  }
+  .max {
+    --file-line-width: 100%;
+  }
+
+  --block-width-wide: min(100cqw, var(--file-line-width) * 1.5);
+  --block-width-max: calc(100cqw - (var(--file-margins-x) * 2));
+  --block-width-offset: calc(-1 * var(--file-margins-x));
+
+   
+  // .markdown-preview-sizer .metadata-container,
+
+  .mod-root .workspace-tab-container,
+  .mod-stacked .workspace-leaf-content{
+    container-type: inline-size;
+  }
+
+  // Table
+  &:is(.table-wide, .table-max),
+  div:is(.table-wide, .table-max) {
+    .markdown-preview-sizer > .el-table,
+    .markdown-preview-sizer > .el-pre .block-language-dataview,
+    .markdown-preview-sizer > .el-pre .block-language-dataviewjs,
+    .markdown-preview-sizer > .el-pre .block-language-datacorejsx,
+    .cm-content > .cm-table-widget,
+    .cm-content > .cm-lang-dataview,
+    .cm-content > .cm-lang-dataviewjs,
+    .cm-content > .cm-lang-datacorejsx {
+      max-width: var(--table-line-max-width);
+      width: var(--table-line-width) !important;
+      justify-self: center;
+      margin-inline: var(--table-line-width-offset) !important;
+    }
+  }
+  &.table-wide,
+  .table-wide {
+    --table-line-max-width: var(--block-width-max);
+    --table-line-width: var(--block-width-wide);
+  }
+  &.table-max,
+  .table-max {
+    --table-line-max-width: var(--block-width-max);
+    --table-line-width: var(--block-width-max);
+  }
+
+
+  // Bases
+  &:is(.bases-wide, .bases-max),
+  div:is(.bases-wide, .bases-max) {
+    .markdown-preview-sizer > .el-pre .bases-embed,
+    .markdown-preview-sizer > .el-p .bases-embed,
+    .cm-content > .bases-embed,
+    .cm-content > .cm-lang-base {
+      max-width: var(--bases-line-max-width);
+      width: var(--bases-line-width) !important;
+      justify-self: center;
+      margin-inline: var(--bases-line-width-offset) !important;
+    }
+  }
+  &.bases-wide,
+  .bases-wide {
+    --bases-line-max-width: var(--block-width-max);
+    --bases-line-width: var(--block-width-wide);
+  }
+  &.bases-max,
+  .bases-max {
+    --bases-line-max-width: var(--block-width-max);
+    --bases-line-width: var(--block-width-max);
+  }
+  
+
+    // Code
+
+  &:is(.code-wide, .code-max),
+  div:is(.code-wide, .code-max) {
+    .markdown-preview-sizer > .el-pre pre,
+    .cm-sizer .cm-content .HyperMD-codeblock,
+    .cm-sizer .cm-content .HyperMD-codeblock-begin,
+    .cm-sizer .cm-content .HyperMD-codeblock-end {
+      max-width: var(--code-line-max-width);
+      width: var(--code-line-width) !important;
+      justify-self: center;
+      margin-inline: var(--code-line-width-offset) !important;
+    }
+  }
+
+  &.code-wide,
+  .code-wide {
+    --code-line-max-width: var(--block-width-max);
+    --code-line-width: var(--block-width-wide);
+  }
+  &.code-max,
+  .code-max {
+    --code-line-max-width: var(--block-width-max);
+    --code-line-width: var(--block-width-max);
+  }
+
+   &:is(.meta-wide, .meta-max),
+  div:is(.meta-wide, .meta-max) {
+    // 阅读模式
+    // .cm-sizer .metadata-container,
+  .markdown-preview-sizer .metadata-container
+   {
+      max-width: var(--meta-line-max-width);
+      width: var(--meta-line-width) !important;
+      justify-self: center;
+      margin-inline: var(--meta-line-width-offset) !important;
+    }
+  }
+   &.meta-wide,
+  .meta-wide {
+    --meta-line-max-width: var(--block-width-max);
+    --meta-line-width: var(--block-width-wide);
+  }
+  &.meta-max,
+  .meta-max {
+    --meta-line-max-width: var(--block-width-max);
+    --meta-line-width: var(--block-width-max);
+  }
+}
