@@ -2,6 +2,7 @@
 @use "./callout";
 // @use "./checkboxes";
 @use "./code";
+@use "./divider-line";
 @use "./heading";
 @use "./image-filters";
 @use "./kbd";
@@ -19,13 +20,13 @@ ul {
   flex-direction: column;
 }
 
-ul>li.task-list-item[data-task="x" i] {
+ul > li.task-list-item[data-task="x" i] {
   order: 1;
 }
 
 //己完成任务降低不透明度
 
-ul>li.task-list-item[data-task="x" i] {
+ul > li.task-list-item[data-task="x" i] {
   opacity: 0.6;
 
   & & {
