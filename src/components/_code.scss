@@ -6,7 +6,11 @@ body {
 }
 
 /* 阅读模式 */
-.view-content .markdown-reading-view .markdown-preview-sizer div:not(.el-pre) code {
+.view-content
+  .markdown-reading-view
+  .markdown-preview-sizer
+  div:not(.el-pre)
+  code {
   color: var(--inline-code-color) !important;
   background-color: var(--inline-code-bg);
   border-radius: var(--radius-m);
@@ -14,7 +18,10 @@ body {
 }
 
 /* 实时预览 */
-.codeblock-customizer.codeblock-customizer-style-inline-code .markdown-rendered :not(pre)>code.codeblock-customizer-inline-code {
+.codeblock-customizer.codeblock-customizer-style-inline-code
+  .markdown-rendered
+  :not(pre)
+  > code.codeblock-customizer-inline-code {
   color: var(--inline-code-color) !important;
   background-color: var(--inline-code-bg);
   border-radius: var(--radius-m);
@@ -22,7 +29,10 @@ body {
 }
 
 /* 源码模式 */
-.cm-s-obsidian span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code):not(.obsidian-search-match-highlight),
+.cm-s-obsidian
+  span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code):not(
+    .obsidian-search-match-highlight
+  ),
 .cm-formatting.cm-formatting-code.cm-inline-code {
   color: var(--inline-code-color);
   background-color: var(--inline-code-bg);
@@ -38,12 +48,12 @@ body {
     $cm-variant: ".cm-" + $item;
 
     @if $result ==null {
-      $result: #{$dot-variant},
+      $result:
+        #{$dot-variant},
         #{$cm-variant};
-    }
-
-    @else {
-      $result: #{$result},
+    } @else {
+      $result:
+        #{$result},
         #{$dot-variant},
         #{$cm-variant};
     }
@@ -53,7 +63,6 @@ body {
 }
 
 body {
-
   code .token,
   .HyperMD-codeblock *,
   .codeblock-customizer-inline-code-wrapper * {
@@ -77,16 +86,16 @@ body {
   //   --code-property: #83c9bc;
   //   --code-value: #d0bf69;
   // }
-  &.theme-light :is(code, .HyperMD-codeblock, [data-language="templater"]) {
-    --code-normal: #383a42;
-    --code-comment: var(--text-faint);
-    --code-function: #b76b02;
-    --code-important: #b76b02;
-    --code-keyword: #e45749;
-    --code-property: #62afef;
-    --code-punctuation: #383a42;
-    --code-string: #0d97b3;
-    --code-tag: #e45749;
-    --code-value: #a626a4;
-  }
+  // &.theme-light :is(code, .HyperMD-codeblock, [data-language="templater"]) {
+  //   --code-normal: #383a42;
+  //   --code-comment: var(--text-faint);
+  //   --code-function: #b76b02;
+  //   --code-important: #b76b02;
+  //   --code-keyword: #e45749;
+  //   --code-property: #62afef;
+  //   --code-punctuation: #383a42;
+  //   --code-string: #0d97b3;
+  //   --code-tag: #e45749;
+  //   --code-value: #a626a4;
+  // }
 }

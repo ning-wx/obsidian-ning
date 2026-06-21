@@ -1,0 +1,153 @@
+.theme-light.theme-ember-light {
+  color-scheme: light;
+  --accent-h: 11.24;
+  --accent-s: 53.25%;
+  --accent-l: 40.26%;
+
+  --mono-rgb-0: 245, 241, 235;
+  --mono-rgb-100: 45, 37, 32;
+
+  --color-base-00: #eee4d0;
+  --color-base-05: #ded2b8;
+  --color-base-10: #e6dac4;
+  --color-base-20: #e6dac4;
+  --color-base-25: #ded2b8;
+  --color-base-30: #d4c8ae;
+  --color-base-35: #c4b89e;
+  --color-base-40: #9c9280;
+  --color-base-50: #746a58;
+  --color-base-60: #544c3c;
+  --color-base-70: #342c20;
+  --color-base-100: #282418;
+
+  --background-primary: #e6dac4;
+  --background-primary-alt: #ded2b8;
+  --background-secondary: #d4c8b0;
+  --background-secondary-alt: #c4b89e;
+  --background-modifier-border: var(--color-base-30);
+  --background-modifier-hover: rgba(166, 124, 109, 0.15);
+  --background-modifier-active-hover: var(--color-base-30);
+
+  --text-normal: #282418;
+  --text-muted: #342c20;
+  --text-faint: #544c3c;
+  --text-on-accent: #e6dac4;
+
+  --interactive-accent: #b84c30;
+  --interactive-accent-hover: #8b7f73;
+  --text-accent: #b84c30;
+  --text-accent-hover: #8b7f73;
+
+  // --background-modifier-border-hover: #e6dfd6;
+  // --interactive-normal: #f5f1eb;
+  // --interactive-hover: #e6dfd6;
+
+  --inline-code-color: #905050;
+  --inline-code-bg: #ded2b8;
+
+  --hr-color: #4a4238;
+  --caret-color: #bf6159;
+
+  --graph-line: #c4b89e;
+  --graph-node: #746a58;
+
+  --color-red: #b84c30;
+  --color-orange: #946030;
+  --color-yellow: #7a6820;
+  --color-green: #4a6830;
+  --color-cyan: #386858;
+  --color-blue: #3a6080;
+  --color-purple: #706070;
+  --color-pink: #905050;
+  --color-red-rgb: 184, 76, 48;
+  --color-orange-rgb: 148, 96, 48;
+  --color-yellow-rgb: 122, 104, 32;
+  --color-green-rgb: 74, 104, 48;
+  --color-cyan-rgb: 56, 104, 88;
+  --color-blue-rgb: 58, 96, 128;
+  --color-purple-rgb: 112, 96, 112;
+  --color-pink-rgb: 144, 80, 80;
+
+  --link-external-color: var(--color-pink);
+  --link-external-color-hover: var(--color-pink);
+}
+
+.theme-dark.theme-ember-dark {
+  color-scheme: dark;
+
+  --accent-h: 15.67;
+  --accent-s: 67.37%;
+  --accent-l: 62.75%;
+
+  --mono-rgb-0: 26, 23, 20;
+  --mono-rgb-100: 204, 198, 189;
+
+  --color-base-00: #1c1b19;
+  --color-base-05: #222120;
+  --color-base-10: #151412;
+  --color-base-20: #1c1b19;
+  --color-base-25: #252422;
+  --color-base-30: #2e2d2a;
+  --color-base-35: #3e3c38;
+  --color-base-40: #585550;
+  --color-base-50: #706c61;
+  --color-base-60: #908a7e;
+  --color-base-70: #b8b0a0;
+  --color-base-100: #d8d0c0;
+
+  --background-primary: #1c1b19;
+  --background-primary-alt: #222120;
+  --background-secondary: #242320;
+  --background-secondary-alt: #1c1b19;
+
+  --text-normal: #d8d0c0;
+  --text-muted: #b8b0a0;
+  --text-faint: #908a7e;
+  --text-on-accent: #1a1714;
+
+  --bold-color: var(--color-green);
+
+  --inline-code-color: var(--color-pink);
+  --inline-code-bg: hsl(350, 10%, 18%);
+
+  --interactive-accent: #e08060;
+  --interactive-accent-hover: #a89a8d;
+  --text-accent: #e08060;
+  --text-accent-hover: #a89a8d;
+
+  --background-modifier-border: #403a36;
+  --background-modifier-border-hover: #403a36;
+
+  --interactive-normal: #1a1714;
+  --interactive-hover: #2a2520;
+
+  --color-gray-rgb: 166, 150, 142;
+  --color-gray: rgb(166, 150, 141);
+  --color-red: #e08060;
+  --color-orange: #c09058;
+  --color-yellow: #c8b468;
+  --color-green: #8a9868;
+  --color-cyan: #80a090;
+  --color-blue: #7890a0;
+  --color-purple: #988090;
+  --color-pink: #b07878;
+
+  --color-red-rgb: 224, 128, 96;
+  --color-orange-rgb: 192, 144, 88;
+  --color-yellow-rgb: 200, 180, 104;
+  --color-green-rgb: 138, 152, 104;
+  --color-cyan-rgb: 128, 160, 144;
+  --color-blue-rgb: 120, 144, 160;
+  --color-purple-rgb: 152, 128, 144;
+  --color-pink-rgb: 176, 120, 120;
+  --link-color-hover: var(--color-red);
+  --link-external-color: var(--color-blue);
+  --link-external-color-hover: var(--color-blue);
+
+  --h1-color: var(--color-red);
+  --h2-color: var(--color-orange);
+  --h3-color: var(--color-yellow);
+  --h4-color: var(--color-green);
+  --h5-color: var(--color-cyan);
+  --h6-color: var(--color-purple);
+}

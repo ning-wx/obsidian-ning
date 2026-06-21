@@ -15,3 +15,26 @@
   --callout-quote: 158, 158, 158;
   border: 1.5px solid rgba(var(--callout-color), 0.2);
 }
+
+
+.callout-floating .callout,
+.callout-floating .markdown-source-view.mod-cm6 .callout {
+  margin: 13px 0px;
+  border-radius: var(--radius-m);
+  border: 1.2px solid rgba(var(--callout-color), 0.4);
+  box-shadow: var(--shadow-s);
+  background-color: transparent;
+  padding: 0px;
+
+  >.callout-title,
+  >.markdown-source-view.mod-cm6 .callout-title {
+    background-color: rgba(var(--callout-color), 0.2);
+    padding: 10px;
+    min-width: 100%;
+  }
+
+  >.callout-content,
+  >.markdown-source-view.mod-cm6 .callout-content {
+    padding: 0px 10px;
+  }
+}

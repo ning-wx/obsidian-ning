@@ -1,4 +1,4 @@
-.theme-light {
+.theme-light.theme-love-light {
   color-scheme: light;
   --accent-h: 16;
   --accent-s: 24%;
@@ -69,12 +69,22 @@
   --color-purple-rgb: 157, 134, 142;
   --color-pink-rgb: 194, 139, 143;
 
+  --code-normal: #383a42;
+  --code-comment: var(--text-faint);
+  --code-function: #b76b02;
+  --code-important: #b76b02;
+  --code-keyword: #e45749;
+  --code-property: #62afef;
+  --code-punctuation: #383a42;
+  --code-string: #0d97b3;
+  --code-tag: #e45749;
+  --code-value: #a626a4;
 
   --link-external-color: var(--color-blue);
   --link-external-color-hover: var(--color-blue);
 }
 
-.theme-dark {
+.theme-dark.theme-love-dark {
   color-scheme: dark;
 
   --accent-h: 15;

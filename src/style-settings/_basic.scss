@@ -2,46 +2,72 @@
 
 name: 📦 Ning
 id: ning-editor
-
 settings:
-  -
-    id: workspace
+
+  - id: colorscheme-setting
+    title: Color Scheme
+    type: heading
+    level: 2
+    collapsed: true
+
+  - id: ning-theme-light
+    title: Light Theme
+    description: 选择你喜欢的亮色主题
+    type: class-select
+    allowEmpty: false
+    default: theme-love-light
+    options:
+      - label: Love
+        value: theme-love-light
+      - label: Flexoki
+        value: theme-flexoki-light
+      - label: Ember
+        value: theme-ember-light
+
+  - id: ning-theme-dark
+    title: Dark Theme
+    description: 选择你喜欢的暗色主题
+    type: class-select
+    allowEmpty: false
+    default: theme-love-dark
+    options:
+      - label: Love
+        value: theme-love-dark
+      - label: Flexoki
+        value: theme-flexoki-dark
+      - label: Ember
+        value: theme-ember-dark
+
+  - id: workspace
     title: Workspace
     type: heading
     level: 2
 
-  -
-    id: layout-style
+  - id: layout-style
     title: Layout Style
     description: Select the workspace layout style.
     type: class-select
     default: layout-frame
     options:
-      -
-        label: Frame
+      - label: Frame
         value: layout-frame
 
-  -
-    id: heading
+  - id: heading
     title: Heading
     type: heading
     level: 2
 
-  -
-    id: heading-style
+  - id: heading-style
     title: Heading Indicator
     description: Display heading level indicators.
     type: class-select
     default: heading-indicator-auto
     options:
-      -
-        label: Disable
+      - label: Disable
         value: heading-indicator-disable
-      -
-        label: Auto Hide
+      - label: Auto Hide
         value: heading-indicator-auto
-      -
-        label: Fixed
+      - label: Fixed
         value: heading-indicator-fixed
 
 */
