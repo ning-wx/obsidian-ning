@@ -5,3 +5,7 @@ body:not(.is-mobile) .workspace-split .workspace-tabs:not(.mod-stacked) .workspa
 body:not(.is-mobile).workspace-split.mod-root {
   background-color: var(--background-secondary);
 }
+
+body .workspace-split .workspace-tabs.mod-stacked.mod-top {
+  background-color: var(--background-primary);
+}

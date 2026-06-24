@@ -2,6 +2,7 @@
 
 name: 📦 Ning
 id: ning-editor
+
 settings:
 
   - id: colorscheme-setting
@@ -69,5 +70,51 @@ settings:
         value: heading-indicator-auto
       - label: Fixed
         value: heading-indicator-fixed
+
+  - id: file-explorer
+    title: File Explorer
+    type: heading
+    level: 2
+    collapsed: true
+
+  - id: alt-folder-icons
+    title: 启用文件夹图标
+    description: Use folders as collapse indicators instead of chevrons.
+    type: class-toggle
+
+  - id: colorful-folders_text
+    title: 彩色文件夹文字颜色
+    description: Adds colors to the name text of the folder. When hovered, folder background is colored.
+    type: class-toggle
+
+  - id: colorful-folders_collapse-indicator
+    title: 文件夹折叠指示器启用彩色
+    description: Adds color to the collapse indicators of the folders.
+    type: class-toggle
+
+  - id: folders_background
+    title: 彩色文件夹背景颜色
+    type: class-select
+    allowEmpty: false
+    default: none
+    options:
+      - label: None
+        value: none
+      - label: Default
+        value: colorful-folders_background
+      - label: Subtle
+        value: colorful-folders-subtle
+      - label: Length
+        value: colorful-folders-length
+
+  - id: colorful-folders_indentation-guide
+    title: 文件夹缩进线启用颜色
+    description: Colors folder's indentation guide based on parent folder's color.
+    type: class-toggle
+
+  - id: colorful-folders_inherit-color
+    title: 上下级文件夹颜色继承
+    description: The color cycles through up to 12 colors for both top level folders and subfolders by default. If you would like subfolders to be colored based on their top level folder colors, toggle this on.
+    type: class-toggle
 
 */

@@ -1,11 +1,11 @@
-// @use "./background-image";
+@use "./background-image";
 @use "./block-width";
 @use "./cssclasses";
 @use "./font";
 @use "./wide-views";
 
 // 启用连体  == ->
-.view-content > .markdown-source-view.mod-cm6 .cm-scroller,
+.view-content>.markdown-source-view.mod-cm6 .cm-scroller,
 .markdown-preview-view,
 .markdown-rendered {
   font-feature-settings:
