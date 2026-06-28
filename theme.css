@@ -346,6 +346,526 @@
   --link-external-color-hover: var(--link-external-color);
 }
 
+.theme-light.theme-claude-light {
+  /* ── Backgrounds ─────────────────────────────────────────── */
+  --color-base-00: #faf9f5;
+  /* primary background (warm off-white) */
+  --color-base-05: #f5f3ed;
+  --color-base-10: #efeee8;
+  --color-base-20: #e8e6dc;
+  /* light gray */
+  --color-base-25: #dddbd3;
+  --color-base-30: #cccac3;
+  --color-base-35: #bfbdb6;
+  --color-base-40: #b0aea5;
+  /* mid gray */
+  --color-base-50: #97958d;
+  --color-base-60: #7a7870;
+  --color-base-70: #5e5c56;
+  --color-base-100: #141413;
+  /* near-black */
+  /* ── Semantic surfaces ───────────────────────────────────── */
+  --background-primary: #faf9f5;
+  --background-primary-alt: #f5f3ed;
+  --background-secondary: #efeee8;
+  --background-secondary-alt: #e8e6dc;
+  --background-modifier-hover: rgba(20, 20, 19, 0.05);
+  --background-modifier-active: rgba(20, 20, 19, 0.08);
+  --background-modifier-border: #e8e6dc;
+  --background-modifier-form-field: #ffffff;
+  --background-modifier-box-shadow: rgba(20, 20, 19, 0.12);
+  /* ── Text ────────────────────────────────────────────────── */
+  --text-normal: #141413;
+  --text-muted: #7a7870;
+  --text-faint: #b0aea5;
+  --text-on-accent: #faf9f5;
+  --text-error: #c0392b;
+  --text-accent: #d97757;
+  /* Claude orange */
+  --text-accent-hover: #c5673f;
+  /* ── Interactive / accent ───────────────────────────────── */
+  --interactive-accent: #d97757;
+  --interactive-accent-hover: #c5673f;
+  --interactive-accent-rgb: 217, 119, 87;
+  --interactive-normal: #efeee8;
+  --interactive-hover: #e8e6dc;
+  --interactive-muted: #f5f3ed;
+  /* ── Headings ────────────────────────────────────────────── */
+  --h1-color: #141413;
+  --h2-color: #2e2d2b;
+  --h3-color: #d97757;
+  /* orange accent on h3 */
+  --h4-color: #5e5c56;
+  --h5-color: #7a7870;
+  --h6-color: #97958d;
+  /* ── Links ───────────────────────────────────────────────── */
+  --link-color: #6a9bcc;
+  /* Claude blue */
+  --link-color-hover: #4d85bf;
+  --link-unresolved-color: #b0aea5;
+  --link-external-color: #6a9bcc;
+  /* ── Code ────────────────────────────────────────────────── */
+  --code-background: #efeee8;
+  --code-normal: #2e2d2b;
+  --code-comment: #97958d;
+  --code-function: #d97757;
+  --code-important: #c0392b;
+  --code-keyword: #6a9bcc;
+  --code-operator: #d97757;
+  --code-property: #788c5d;
+  --code-string: #788c5d;
+  --code-tag: #d97757;
+  --code-value: #6a9bcc;
+  /* ── Callouts ────────────────────────────────────────────── */
+  --callout-default: 106, 155, 204;
+  /* blue */
+  --callout-info: 106, 155, 204;
+  --callout-tip: 120, 140, 93;
+  /* green */
+  --callout-warning: 217, 119, 87;
+  /* orange */
+  --callout-question: 106, 155, 204;
+  --callout-failure: 192, 57, 43;
+  --callout-bug: 192, 57, 43;
+  --callout-success: 120, 140, 93;
+  /* ── Scrollbar ───────────────────────────────────────────── */
+  --scrollbar-bg: transparent;
+  --scrollbar-thumb-bg: #cccac3;
+  /* ── Toggles / checkboxes ───────────────────────────────── */
+  --checkbox-color: #d97757;
+  --checkbox-color-hover: #c5673f;
+  --checkbox-marker-color: #faf9f5;
+  /* ── Borders & dividers ──────────────────────────────────── */
+  --divider-color: #e8e6dc;
+  --divider-color-hover: #dddbd3;
+  /* ── Graph view ──────────────────────────────────────────── */
+  --graph-node: #d97757;
+  --graph-node-unresolved: #b0aea5;
+  --graph-node-focused: #6a9bcc;
+  --graph-node-tag: #788c5d;
+  --graph-node-attachment: #7a7870;
+  --graph-line: #e8e6dc;
+  --graph-line-focused: #d97757;
+  /* ── Ribbon / sidebar ────────────────────────────────────── */
+  --ribbon-background: #efeee8;
+  --ribbon-background-collapsed: #e8e6dc;
+}
+
+/* ============================================================
+   DARK THEME  (body.theme-dark)
+   ============================================================ */
+.theme-dark.theme-claude-dark {
+  /* ── Backgrounds ─────────────────────────────────────────── */
+  --color-base-00: #141413;
+  /* primary background (near-black warm) */
+  --color-base-05: #1a1918;
+  --color-base-10: #201f1d;
+  --color-base-20: #272523;
+  --color-base-25: #2e2c2a;
+  --color-base-30: #3a3835;
+  --color-base-35: #4a4845;
+  --color-base-40: #5e5c56;
+  --color-base-50: #7a7870;
+  --color-base-60: #97958d;
+  --color-base-70: #b0aea5;
+  --color-base-100: #faf9f5;
+  /* near-white */
+  /* ── Semantic surfaces ───────────────────────────────────── */
+  --background-primary: #141413;
+  --background-primary-alt: #1a1918;
+  --background-secondary: #201f1d;
+  --background-secondary-alt: #272523;
+  --background-modifier-hover: rgba(250, 249, 245, 0.05);
+  --background-modifier-active: rgba(250, 249, 245, 0.08);
+  --background-modifier-border: #2e2c2a;
+  --background-modifier-form-field: #1a1918;
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.40);
+  /* ── Text ────────────────────────────────────────────────── */
+  --text-normal: #e8e6dc;
+  --text-muted: #97958d;
+  --text-faint: #5e5c56;
+  --text-on-accent: #faf9f5;
+  --text-error: #e74c3c;
+  --text-accent: #d97757;
+  --text-accent-hover: #e8916d;
+  /* ── Interactive / accent ───────────────────────────────── */
+  --interactive-accent: #d97757;
+  --interactive-accent-hover: #e8916d;
+  --interactive-accent-rgb: 217, 119, 87;
+  --interactive-normal: #272523;
+  --interactive-hover: #2e2c2a;
+  --interactive-muted: #1a1918;
+  /* ── Headings ────────────────────────────────────────────── */
+  --h1-color: #f5f3ed;
+  --h2-color: #e8e6dc;
+  --h3-color: #d97757;
+  --h4-color: #b0aea5;
+  --h5-color: #97958d;
+  --h6-color: #7a7870;
+  /* ── Links ───────────────────────────────────────────────── */
+  --link-color: #7eaed4;
+  --link-color-hover: #9dc0e0;
+  --link-unresolved-color: #5e5c56;
+  --link-external-color: #7eaed4;
+  /* ── Code ────────────────────────────────────────────────── */
+  --code-background: #1a1918;
+  --code-normal: #e8e6dc;
+  --code-comment: #5e5c56;
+  --code-function: #d97757;
+  --code-important: #e74c3c;
+  --code-keyword: #7eaed4;
+  --code-operator: #d97757;
+  --code-property: #8fa86e;
+  --code-string: #8fa86e;
+  --code-tag: #d97757;
+  --code-value: #7eaed4;
+  /* ── Callouts ────────────────────────────────────────────── */
+  --callout-default: 106, 155, 204;
+  --callout-info: 106, 155, 204;
+  --callout-tip: 120, 140, 93;
+  --callout-warning: 217, 119, 87;
+  --callout-question: 106, 155, 204;
+  --callout-failure: 231, 76, 60;
+  --callout-bug: 231, 76, 60;
+  --callout-success: 120, 140, 93;
+  /* ── Scrollbar ───────────────────────────────────────────── */
+  --scrollbar-bg: transparent;
+  --scrollbar-thumb-bg: #3a3835;
+  /* ── Toggles / checkboxes ───────────────────────────────── */
+  --checkbox-color: #d97757;
+  --checkbox-color-hover: #e8916d;
+  --checkbox-marker-color: #141413;
+  /* ── Borders & dividers ──────────────────────────────────── */
+  --divider-color: #272523;
+  --divider-color-hover: #2e2c2a;
+  /* ── Graph view ──────────────────────────────────────────── */
+  --graph-node: #d97757;
+  --graph-node-unresolved: #4a4845;
+  --graph-node-focused: #7eaed4;
+  --graph-node-tag: #8fa86e;
+  --graph-node-attachment: #7a7870;
+  --graph-line: #2e2c2a;
+  --graph-line-focused: #d97757;
+  /* ── Ribbon / sidebar ────────────────────────────────────── */
+  --ribbon-background: #1a1918;
+  --ribbon-background-collapsed: #141413;
+}
+
+body.theme-solarized-dark {
+  /* Neutral ramp — Solarized base scale */
+  --hsl-neutral-50: 44deg 87% 94%;
+  /* base3  */
+  --hsl-neutral-100: 46deg 42% 88%;
+  /* base2  */
+  --hsl-neutral-200: 180deg 7% 70%;
+  /* base1  */
+  --hsl-neutral-300: 186deg 8% 65%;
+  /* base0  */
+  --hsl-neutral-400: 186deg 8% 55%;
+  /* fg     */
+  --hsl-neutral-500: 196deg 13% 45%;
+  /* base00 */
+  --hsl-neutral-600: 194deg 14% 40%;
+  /* base01 */
+  --hsl-neutral-700: 192deg 81% 14%;
+  /* base02 */
+  --hsl-neutral-800: 192deg 100% 11%;
+  /* base03 */
+  --hsl-neutral-900: 192deg 100% 8%;
+  /* (intermediate) */
+  --hsl-neutral-950: 192deg 100% 5%;
+  /* base04 (darkest) */
+  /* Blue — primary, links, sidebar selection, note-list date, info */
+  --hsl-blue-50: 206deg 100% 92.2%;
+  --hsl-blue-100: 205deg 100% 83%;
+  --hsl-blue-200: 205deg 95% 73%;
+  --hsl-blue-300: 205deg 90% 62%;
+  --hsl-blue-400: 205deg 80% 55%;
+  --hsl-blue-500: 205deg 69% 49%;
+  --hsl-blue-600: 205deg 70% 42%;
+  --hsl-blue-700: 205deg 70% 35%;
+  --hsl-blue-800: 205deg 70% 28%;
+  --hsl-blue-900: 205deg 69% 20%;
+  --hsl-blue-950: 205deg 81% 12.4%;
+  /* Cyan */
+  --hsl-cyan-50: 176deg 100% 94.3%;
+  --hsl-cyan-100: 176deg 100% 86%;
+  --hsl-cyan-200: 175deg 92% 70%;
+  --hsl-cyan-300: 175deg 85% 55%;
+  --hsl-cyan-400: 175deg 72% 48%;
+  --hsl-cyan-500: 175deg 59% 40%;
+  --hsl-cyan-600: 178deg 59% 33%;
+  --hsl-cyan-700: 182deg 59% 25%;
+  --hsl-cyan-800: 182deg 58% 20%;
+  --hsl-cyan-900: 183deg 58% 15%;
+  --hsl-cyan-950: 182deg 75% 7.84%;
+  /* Green — positive, success, diff-added */
+  --hsl-green-50: 90deg 100% 92.2%;
+  --hsl-green-100: 90deg 100% 84%;
+  --hsl-green-200: 83deg 100% 66%;
+  --hsl-green-300: 76deg 100% 49%;
+  --hsl-green-400: 72deg 100% 40%;
+  --hsl-green-500: 68deg 100% 30%;
+  --hsl-green-600: 68deg 100% 25%;
+  --hsl-green-700: 68deg 100% 20%;
+  --hsl-green-800: 68deg 100% 15%;
+  --hsl-green-900: 68deg 100% 10%;
+  --hsl-green-950: 68.3deg 100% 5.69%;
+  /* Yellow — warning, headings, brown, search */
+  --hsl-yellow-50: 47deg 100% 91%;
+  --hsl-yellow-100: 47deg 100% 80%;
+  --hsl-yellow-200: 46deg 100% 65%;
+  --hsl-yellow-300: 45deg 100% 50%;
+  --hsl-yellow-400: 45deg 100% 43%;
+  --hsl-yellow-500: 45deg 100% 35%;
+  --hsl-yellow-600: 45deg 100% 28%;
+  --hsl-yellow-700: 45deg 100% 20%;
+  --hsl-yellow-800: 45deg 100% 15%;
+  --hsl-yellow-900: 46deg 100% 10%;
+  --hsl-yellow-950: 45.5deg 100% 5.69%;
+  /* Orange — titles, cursor-line number, diff-new */
+  --hsl-orange-50: 17.5deg 100% 85.9%;
+  --hsl-orange-100: 17deg 100% 70%;
+  --hsl-orange-200: 17deg 97% 61%;
+  --hsl-orange-300: 17deg 94% 51%;
+  --hsl-orange-400: 18deg 87% 48%;
+  --hsl-orange-500: 18deg 80% 44%;
+  --hsl-orange-600: 18deg 80% 40%;
+  --hsl-orange-700: 18deg 81% 35%;
+  --hsl-orange-800: 18deg 80% 28%;
+  --hsl-orange-900: 18deg 80% 20%;
+  --hsl-orange-950: 17.9deg 90.5% 12.4%;
+  /* Red — negative, error, diff-removed */
+  --hsl-red-50: 1.3deg 100% 91%;
+  --hsl-red-100: 1deg 100% 80%;
+  --hsl-red-200: 1deg 95% 72%;
+  --hsl-red-300: 1deg 90% 64%;
+  --hsl-red-400: 1deg 80% 58%;
+  --hsl-red-500: 1deg 71% 52%;
+  --hsl-red-600: 1deg 71% 47%;
+  --hsl-red-700: 1deg 71% 42%;
+  --hsl-red-800: 1deg 71% 31%;
+  --hsl-red-900: 1deg 71% 20%;
+  --hsl-red-950: 1.18deg 83.6% 12%;
+  /* Violet — note-list date / todo, spell-cap */
+  --hsl-violet-50: 237deg 100% 95.9%;
+  --hsl-violet-100: 236deg 100% 90%;
+  --hsl-violet-200: 237deg 85% 84%;
+  --hsl-violet-300: 237deg 69% 77%;
+  --hsl-violet-400: 237deg 56% 68%;
+  --hsl-violet-500: 237deg 43% 60%;
+  --hsl-violet-600: 237deg 43% 55%;
+  --hsl-violet-700: 237deg 43% 50%;
+  --hsl-violet-800: 237deg 43% 37%;
+  --hsl-violet-900: 237deg 42% 25%;
+  --hsl-violet-950: 237deg 61.1% 14.1%;
+  /* Pink — Solarized magenta (no dedicated magenta ramp in v6) */
+  --hsl-pink-50: 331deg 100% 86.3%;
+  --hsl-pink-100: 331deg 100% 73%;
+  --hsl-pink-200: 331deg 93% 68%;
+  --hsl-pink-300: 331deg 86% 64%;
+  --hsl-pink-400: 331deg 75% 58%;
+  --hsl-pink-500: 331deg 64% 52%;
+  --hsl-pink-600: 331deg 64% 47%;
+  --hsl-pink-700: 331deg 64% 42%;
+  --hsl-pink-800: 331deg 64% 31%;
+  --hsl-pink-900: 331deg 65% 20%;
+  --hsl-pink-950: 332deg 77.8% 12.4%;
+  /*-------------------------------------------------------------
+    --color-* wrappers — recomputed within the editor scope so they
+    resolve the overridden --hsl-* ramps above (see header note).
+  -------------------------------------------------------------*/
+  /* Neutral */
+  --color-neutral-50: hsl(var(--hsl-neutral-50));
+  --color-neutral-100: hsl(var(--hsl-neutral-100));
+  --color-neutral-200: hsl(var(--hsl-neutral-200));
+  --color-neutral-300: hsl(var(--hsl-neutral-300));
+  --color-neutral-400: hsl(var(--hsl-neutral-400));
+  --color-neutral-500: hsl(var(--hsl-neutral-500));
+  --color-neutral-600: hsl(var(--hsl-neutral-600));
+  --color-neutral-700: hsl(var(--hsl-neutral-700));
+  --color-neutral-800: hsl(var(--hsl-neutral-800));
+  --color-neutral-900: hsl(var(--hsl-neutral-900));
+  --color-neutral-950: hsl(var(--hsl-neutral-950));
+  /* Blue */
+  --color-blue-50: hsl(var(--hsl-blue-50));
+  --color-blue-100: hsl(var(--hsl-blue-100));
+  --color-blue-200: hsl(var(--hsl-blue-200));
+  --color-blue-300: hsl(var(--hsl-blue-300));
+  --color-blue-400: hsl(var(--hsl-blue-400));
+  --color-blue-500: hsl(var(--hsl-blue-500));
+  --color-blue-600: hsl(var(--hsl-blue-600));
+  --color-blue-700: hsl(var(--hsl-blue-700));
+  --color-blue-800: hsl(var(--hsl-blue-800));
+  --color-blue-900: hsl(var(--hsl-blue-900));
+  --color-blue-950: hsl(var(--hsl-blue-950));
+  /* Cyan */
+  --color-cyan-50: hsl(var(--hsl-cyan-50));
+  --color-cyan-100: hsl(var(--hsl-cyan-100));
+  --color-cyan-200: hsl(var(--hsl-cyan-200));
+  --color-cyan-300: hsl(var(--hsl-cyan-300));
+  --color-cyan-400: hsl(var(--hsl-cyan-400));
+  --color-cyan-500: hsl(var(--hsl-cyan-500));
+  --color-cyan-600: hsl(var(--hsl-cyan-600));
+  --color-cyan-700: hsl(var(--hsl-cyan-700));
+  --color-cyan-800: hsl(var(--hsl-cyan-800));
+  --color-cyan-900: hsl(var(--hsl-cyan-900));
+  --color-cyan-950: hsl(var(--hsl-cyan-950));
+  /* Green */
+  --color-green-50: hsl(var(--hsl-green-50));
+  --color-green-100: hsl(var(--hsl-green-100));
+  --color-green-200: hsl(var(--hsl-green-200));
+  --color-green-300: hsl(var(--hsl-green-300));
+  --color-green-400: hsl(var(--hsl-green-400));
+  --color-green-500: hsl(var(--hsl-green-500));
+  --color-green-600: hsl(var(--hsl-green-600));
+  --color-green-700: hsl(var(--hsl-green-700));
+  --color-green-800: hsl(var(--hsl-green-800));
+  --color-green-900: hsl(var(--hsl-green-900));
+  --color-green-950: hsl(var(--hsl-green-950));
+  /* Yellow */
+  --color-yellow-50: hsl(var(--hsl-yellow-50));
+  --color-yellow-100: hsl(var(--hsl-yellow-100));
+  --color-yellow-200: hsl(var(--hsl-yellow-200));
+  --color-yellow-300: hsl(var(--hsl-yellow-300));
+  --color-yellow-400: hsl(var(--hsl-yellow-400));
+  --color-yellow-500: hsl(var(--hsl-yellow-500));
+  --color-yellow-600: hsl(var(--hsl-yellow-600));
+  --color-yellow-700: hsl(var(--hsl-yellow-700));
+  --color-yellow-800: hsl(var(--hsl-yellow-800));
+  --color-yellow-900: hsl(var(--hsl-yellow-900));
+  --color-yellow-950: hsl(var(--hsl-yellow-950));
+  /* Orange */
+  --color-orange-50: hsl(var(--hsl-orange-50));
+  --color-orange-100: hsl(var(--hsl-orange-100));
+  --color-orange-200: hsl(var(--hsl-orange-200));
+  --color-orange-300: hsl(var(--hsl-orange-300));
+  --color-orange-400: hsl(var(--hsl-orange-400));
+  --color-orange-500: hsl(var(--hsl-orange-500));
+  --color-orange-600: hsl(var(--hsl-orange-600));
+  --color-orange-700: hsl(var(--hsl-orange-700));
+  --color-orange-800: hsl(var(--hsl-orange-800));
+  --color-orange-900: hsl(var(--hsl-orange-900));
+  --color-orange-950: hsl(var(--hsl-orange-950));
+  /* Red */
+  --color-red-50: hsl(var(--hsl-red-50));
+  --color-red-100: hsl(var(--hsl-red-100));
+  --color-red-200: hsl(var(--hsl-red-200));
+  --color-red-300: hsl(var(--hsl-red-300));
+  --color-red-400: hsl(var(--hsl-red-400));
+  --color-red-500: hsl(var(--hsl-red-500));
+  --color-red-600: hsl(var(--hsl-red-600));
+  --color-red-700: hsl(var(--hsl-red-700));
+  --color-red-800: hsl(var(--hsl-red-800));
+  --color-red-900: hsl(var(--hsl-red-900));
+  --color-red-950: hsl(var(--hsl-red-950));
+  /* Violet */
+  --color-violet-50: hsl(var(--hsl-violet-50));
+  --color-violet-100: hsl(var(--hsl-violet-100));
+  --color-violet-200: hsl(var(--hsl-violet-200));
+  --color-violet-300: hsl(var(--hsl-violet-300));
+  --color-violet-400: hsl(var(--hsl-violet-400));
+  --color-violet-500: hsl(var(--hsl-violet-500));
+  --color-violet-600: hsl(var(--hsl-violet-600));
+  --color-violet-700: hsl(var(--hsl-violet-700));
+  --color-violet-800: hsl(var(--hsl-violet-800));
+  --color-violet-900: hsl(var(--hsl-violet-900));
+  --color-violet-950: hsl(var(--hsl-violet-950));
+  /* Pink — Solarized magenta */
+  --color-pink-50: hsl(var(--hsl-pink-50));
+  --color-pink-100: hsl(var(--hsl-pink-100));
+  --color-pink-200: hsl(var(--hsl-pink-200));
+  --color-pink-300: hsl(var(--hsl-pink-300));
+  --color-pink-400: hsl(var(--hsl-pink-400));
+  --color-pink-500: hsl(var(--hsl-pink-500));
+  --color-pink-600: hsl(var(--hsl-pink-600));
+  --color-pink-700: hsl(var(--hsl-pink-700));
+  --color-pink-800: hsl(var(--hsl-pink-800));
+  --color-pink-900: hsl(var(--hsl-pink-900));
+  --color-pink-950: hsl(var(--hsl-pink-950));
+}
+
+.theme-dark.theme-solarized-dark {
+  color-scheme: dark;
+  --mono-rgb-0: 0, 43, 54;
+  --mono-rgb-100: 0, 45, 56;
+  --accent-h: 175.46;
+  --accent-s: 58.62%;
+  --accent-l: 39.8%;
+  --h1-color: var(--color-orange);
+  --h2-color: var(--color-yellow);
+  --h3-color: var(--color-green);
+  --h4-color: var(--color-cyan);
+  --h5-color: var(--color-blue);
+  --h6-color: var(--color-purple);
+  --color-d-gray-10: hsla(180deg, 7%, 70%, 1);
+  --color-d-gray-20: hsla(186deg, 8%, 65%, 1);
+  --color-d-gray-30: hsla(190deg, 9%, 55%, 1);
+  --color-d-gray-40: hsla(196deg, 13%, 45%, 1);
+  --color-d-gray-50: hsla(194deg, 14%, 40%, 1);
+  --color-d-gray-60: hsla(193deg, 20%, 34%, 1);
+  --color-d-gray-70: hsla(192deg, 30%, 28%, 1);
+  --color-d-gray-80: hsla(191deg, 42%, 22%, 1);
+  --color-d-gray-90: hsla(190deg, 55%, 18%, 1);
+  --color-d-gray-100: hsla(192deg, 81%, 14%, 1);
+  --color-d-gray-110: hsla(192deg, 100%, 11%, 1);
+  --color-d-gray-120: hsla(192deg, 100%, 8%, 1);
+  --color-d-gray-130: hsla(192deg, 100%, 6%, 1);
+  --color-d-gray-140: hsla(192deg, 100%, 5%, 1);
+  --color-orange: hsl(var(--hsl-orange-500));
+  --color-pink: hsl(var(--hsl-pink-500));
+  --color-blue: hsl(var(--hsl-blue-500));
+  --color-cyan: hsl(var(--hsl-cyan-500));
+  --color-green: hsl(var(--hsl-green-500));
+  --color-red: hsl(var(--hsl-red-500));
+  --color-yellow: hsl(var(--hsl-yellow-500));
+  --color-purple: hsl(var(--hsl-violet-500));
+  --color-red-rgb: 220, 49, 46;
+  --color-orange-rgb: 202, 76, 22;
+  --color-yellow-rgb: 179, 134, 0;
+  --color-green-rgb: 133, 153, 0;
+  --color-cyan-rgb: 42, 162, 152;
+  --color-blue-rgb: 39, 139, 211;
+  --color-purple-rgb: 109, 114, 197;
+  --color-pink-rgb: 211, 54, 130;
+  --color-base-00: var(--color-d-gray-140);
+  --color-base-05: var(--color-d-gray-120);
+  --color-base-10: var(--color-d-gray-100);
+  --color-base-20: var(--color-d-gray-90);
+  --color-base-25: var(--color-d-gray-80);
+  --color-base-30: var(--color-d-gray-70);
+  --color-base-35: var(--color-d-gray-60);
+  --color-base-40: var(--color-d-gray-50);
+  --color-base-50: var(--color-d-gray-40);
+  --color-base-60: var(--color-d-gray-30);
+  --color-base-70: var(--color-d-gray-20);
+  --color-base-100: var(--color-d-gray-10);
+  --background-primary: var(--color-neutral-800);
+  --background-primary-alt: var(--color-neutral-700);
+  --background-secondary: var(--color-neutral-900);
+  --background-secondary-alt: hsl(var(--hsl-neutral-800) / 50%);
+  --background-modifier-hover: hsl(var(--hsl-neutral-600) / 40%);
+  --background-modifier-border: var(--color-d-gray-90);
+  --background-modifier-border-hover: color-mix(in srgb,
+      var(--color-d-gray-80) 80%,
+      var(--color-d-gray-90));
+  --background-modifier-border-focus: color-mix(in srgb,
+      var(--color-d-gray-70) 40%,
+      var(--color-d-gray-80));
+  --text-normal: var(--color-neutral-400);
+  --text-muted: var(--color-neutral-500);
+  --text-faint: var(--color-neutral-600);
+  --link-color: var(--color-purple);
+  --link-color-hover: var(--link-color);
+  --link-external-color: var(--color-blue);
+  --link-external-color-hover: var(--link-external-color);
+  --code-background: oklch(from var(--color-d-gray-130) l c h/0.4);
+  --inline-code-color: var(--color-yellow);
+  --inline-code-bg: oklch(from var(--color-neutral-700) l c h/0.5);
+  --text-highlight-bg: hsl(var(--hsl-pink-500) / 40%);
+  --metadata-background: hsl(var(--hsl-neutral-700) / 50%);
+}
+
 body {
   --color-gray: rgb(var(--callout-quote));
   --color-red-orange: color-mix(in srgb,
@@ -1016,6 +1536,591 @@ body:is(:not(.css-settings-manager), :not(.heading-indicator-disable)).heading-i
   transition: opacity 0.25s linear;
 }
 
+/*────────── Core Plugin: File Explorer ──────────*/
+.nav-files-container {
+  padding-top: var(--size-2-1);
+}
+
+.nav-file-title {
+  transition: padding, transform var(--anim-duration-fast) var(--anim-motion-smooth);
+}
+.nav-file-title:active {
+  transform: translateY(2px);
+}
+
+.nav-file-tag {
+  color: var(--nav-file-tag-color);
+  background: var(--nav-file-tag-bg);
+  margin-top: 1px;
+}
+.nav-file-title.is-active .nav-file-tag {
+  margin-top: 0px;
+}
+
+/*────────── SS: Colored File Explorer Folders ──────────*/
+body {
+  --nav-folder-color: var(--nav-item-color);
+  --nav-folder-bg-color: transparent;
+  --nav-folder-bg-color-hover: var(--nav-item-background-hover);
+  --nav-folder-collapse-color: var(--nav-collapse-icon-color);
+}
+
+.nav-folder-children > .nav-folder .nav-folder-title,
+.nav-files-container > div > .nav-folder .nav-folder-title {
+  color: var(--nav-folder-color);
+  border-radius: 6px;
+}
+body:not(.colorful-folders-length) .nav-folder-children > .nav-folder .nav-folder-title,
+body:not(.colorful-folders-length) .nav-files-container > div > .nav-folder .nav-folder-title {
+  background: var(--nav-folder-bg-color);
+}
+.nav-folder-children > .nav-folder .nav-folder-title:hover,
+.nav-files-container > div > .nav-folder .nav-folder-title:hover {
+  color: var(--nav-folder-color);
+}
+body:not(.colorful-folders-length) .nav-folder-children > .nav-folder .nav-folder-title:hover,
+body:not(.colorful-folders-length) .nav-files-container > div > .nav-folder .nav-folder-title:hover {
+  background: var(--nav-folder-bg-color);
+}
+
+.nav-folder .tree-item-icon svg.svg-icon {
+  color: var(--nav-folder-collapse-color);
+}
+
+body.colorful-folders_collapse-indicator .nav-folder-children > .nav-folder:nth-child(8n+2),
+body.colorful-folders_collapse-indicator .nav-files-container > div > .nav-folder:nth-child(8n+2) {
+  --nav-folder-collapse-color: var(--nav-folder-1-collapse-color);
+}
+body.colorful-folders_collapse-indicator .nav-folder-children > .nav-folder:nth-child(8n+3),
+body.colorful-folders_collapse-indicator .nav-files-container > div > .nav-folder:nth-child(8n+3) {
+  --nav-folder-collapse-color: var(--nav-folder-2-collapse-color);
+}
+body.colorful-folders_collapse-indicator .nav-folder-children > .nav-folder:nth-child(8n+4),
+body.colorful-folders_collapse-indicator .nav-files-container > div > .nav-folder:nth-child(8n+4) {
+  --nav-folder-collapse-color: var(--nav-folder-3-collapse-color);
+}
+body.colorful-folders_collapse-indicator .nav-folder-children > .nav-folder:nth-child(8n+5),
+body.colorful-folders_collapse-indicator .nav-files-container > div > .nav-folder:nth-child(8n+5) {
+  --nav-folder-collapse-color: var(--nav-folder-4-collapse-color);
+}
+body.colorful-folders_collapse-indicator .nav-folder-children > .nav-folder:nth-child(8n+6),
+body.colorful-folders_collapse-indicator .nav-files-container > div > .nav-folder:nth-child(8n+6) {
+  --nav-folder-collapse-color: var(--nav-folder-5-collapse-color);
+}
+body.colorful-folders_collapse-indicator .nav-folder-children > .nav-folder:nth-child(8n+7),
+body.colorful-folders_collapse-indicator .nav-files-container > div > .nav-folder:nth-child(8n+7) {
+  --nav-folder-collapse-color: var(--nav-folder-6-collapse-color);
+}
+body.colorful-folders_collapse-indicator .nav-folder-children > .nav-folder:nth-child(8n+8),
+body.colorful-folders_collapse-indicator .nav-files-container > div > .nav-folder:nth-child(8n+8) {
+  --nav-folder-collapse-color: var(--nav-folder-7-collapse-color);
+}
+body.colorful-folders_collapse-indicator .nav-folder-children > .nav-folder:nth-child(8n+9),
+body.colorful-folders_collapse-indicator .nav-files-container > div > .nav-folder:nth-child(8n+9) {
+  --nav-folder-collapse-color: var(--nav-folder-8-collapse-color);
+}
+
+body.colorful-folders_background .nav-folder-children > .nav-folder:nth-child(8n+2),
+body.colorful-folders_background .nav-files-container > div > .nav-folder:nth-child(8n+2) {
+  --nav-folder-bg-color: var(--nav-folder-1-bg-color);
+  --nav-folder-bg-color-hover: var(--nav-folder-1-bg-color-hover);
+}
+body.colorful-folders_background .nav-folder-children > .nav-folder:nth-child(8n+3),
+body.colorful-folders_background .nav-files-container > div > .nav-folder:nth-child(8n+3) {
+  --nav-folder-bg-color: var(--nav-folder-2-bg-color);
+  --nav-folder-bg-color-hover: var(--nav-folder-2-bg-color-hover);
+}
+body.colorful-folders_background .nav-folder-children > .nav-folder:nth-child(8n+4),
+body.colorful-folders_background .nav-files-container > div > .nav-folder:nth-child(8n+4) {
+  --nav-folder-bg-color: var(--nav-folder-3-bg-color);
+  --nav-folder-bg-color-hover: var(--nav-folder-3-bg-color-hover);
+}
+body.colorful-folders_background .nav-folder-children > .nav-folder:nth-child(8n+5),
+body.colorful-folders_background .nav-files-container > div > .nav-folder:nth-child(8n+5) {
+  --nav-folder-bg-color: var(--nav-folder-4-bg-color);
+  --nav-folder-bg-color-hover: var(--nav-folder-4-bg-color-hover);
+}
+body.colorful-folders_background .nav-folder-children > .nav-folder:nth-child(8n+6),
+body.colorful-folders_background .nav-files-container > div > .nav-folder:nth-child(8n+6) {
+  --nav-folder-bg-color: var(--nav-folder-5-bg-color);
+  --nav-folder-bg-color-hover: var(--nav-folder-5-bg-color-hover);
+}
+body.colorful-folders_background .nav-folder-children > .nav-folder:nth-child(8n+7),
+body.colorful-folders_background .nav-files-container > div > .nav-folder:nth-child(8n+7) {
+  --nav-folder-bg-color: var(--nav-folder-6-bg-color);
+  --nav-folder-bg-color-hover: var(--nav-folder-6-bg-color-hover);
+}
+body.colorful-folders_background .nav-folder-children > .nav-folder:nth-child(8n+8),
+body.colorful-folders_background .nav-files-container > div > .nav-folder:nth-child(8n+8) {
+  --nav-folder-bg-color: var(--nav-folder-7-bg-color);
+  --nav-folder-bg-color-hover: var(--nav-folder-7-bg-color-hover);
+}
+body.colorful-folders_background .nav-folder-children > .nav-folder:nth-child(8n+9),
+body.colorful-folders_background .nav-files-container > div > .nav-folder:nth-child(8n+9) {
+  --nav-folder-bg-color: var(--nav-folder-8-bg-color);
+  --nav-folder-bg-color-hover: var(--nav-folder-8-bg-color-hover);
+}
+
+body.colorful-folders-length .nav-folder-title::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 6px;
+  background: var(--nav-folder-bg-color);
+  z-index: -1;
+  left: 0;
+}
+body.colorful-folders-length .nav-folder-children > .nav-folder > .nav-folder-title::before {
+  left: calc(var(--nav-item-children-padding-start) * 4);
+}
+body.colorful-folders-length .nav-folder-children .nav-folder-children > .nav-folder > .nav-folder-title::before {
+  left: calc(var(--nav-item-children-padding-start) * 8);
+}
+body.colorful-folders-length .nav-folder-children .nav-folder-children .nav-folder-children > .nav-folder > .nav-folder-title::before {
+  left: calc(var(--nav-item-children-padding-start) * 12);
+}
+body.colorful-folders-length .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children > .nav-folder > .nav-folder-title::before {
+  left: calc(var(--nav-item-children-padding-start) * 16);
+}
+body.colorful-folders-length .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children > .nav-folder > .nav-folder-title::before {
+  left: calc(var(--nav-item-children-padding-start) * 20);
+}
+body.colorful-folders-length .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children > .nav-folder > .nav-folder-title::before {
+  left: calc(var(--nav-item-children-padding-start) * 24);
+}
+body.colorful-folders-length .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children > .nav-folder > .nav-folder-title::before {
+  left: calc(var(--nav-item-children-padding-start) * 28);
+}
+body.colorful-folders-length .nav-folder-children > .nav-folder:nth-child(8n+2),
+body.colorful-folders-length .nav-files-container > div > .nav-folder:nth-child(8n+2) {
+  --nav-folder-bg-color: var(--nav-folder-1-bg-color);
+  --nav-folder-bg-color-hover: var(--nav-folder-1-bg-color-hover);
+}
+body.colorful-folders-length .nav-folder-children > .nav-folder:nth-child(8n+3),
+body.colorful-folders-length .nav-files-container > div > .nav-folder:nth-child(8n+3) {
+  --nav-folder-bg-color: var(--nav-folder-2-bg-color);
+  --nav-folder-bg-color-hover: var(--nav-folder-2-bg-color-hover);
+}
+body.colorful-folders-length .nav-folder-children > .nav-folder:nth-child(8n+4),
+body.colorful-folders-length .nav-files-container > div > .nav-folder:nth-child(8n+4) {
+  --nav-folder-bg-color: var(--nav-folder-3-bg-color);
+  --nav-folder-bg-color-hover: var(--nav-folder-3-bg-color-hover);
+}
+body.colorful-folders-length .nav-folder-children > .nav-folder:nth-child(8n+5),
+body.colorful-folders-length .nav-files-container > div > .nav-folder:nth-child(8n+5) {
+  --nav-folder-bg-color: var(--nav-folder-4-bg-color);
+  --nav-folder-bg-color-hover: var(--nav-folder-4-bg-color-hover);
+}
+body.colorful-folders-length .nav-folder-children > .nav-folder:nth-child(8n+6),
+body.colorful-folders-length .nav-files-container > div > .nav-folder:nth-child(8n+6) {
+  --nav-folder-bg-color: var(--nav-folder-5-bg-color);
+  --nav-folder-bg-color-hover: var(--nav-folder-5-bg-color-hover);
+}
+body.colorful-folders-length .nav-folder-children > .nav-folder:nth-child(8n+7),
+body.colorful-folders-length .nav-files-container > div > .nav-folder:nth-child(8n+7) {
+  --nav-folder-bg-color: var(--nav-folder-6-bg-color);
+  --nav-folder-bg-color-hover: var(--nav-folder-6-bg-color-hover);
+}
+body.colorful-folders-length .nav-folder-children > .nav-folder:nth-child(8n+8),
+body.colorful-folders-length .nav-files-container > div > .nav-folder:nth-child(8n+8) {
+  --nav-folder-bg-color: var(--nav-folder-7-bg-color);
+  --nav-folder-bg-color-hover: var(--nav-folder-7-bg-color-hover);
+}
+body.colorful-folders-length .nav-folder-children > .nav-folder:nth-child(8n+9),
+body.colorful-folders-length .nav-files-container > div > .nav-folder:nth-child(8n+9) {
+  --nav-folder-bg-color: var(--nav-folder-8-bg-color);
+  --nav-folder-bg-color-hover: var(--nav-folder-8-bg-color-hover);
+}
+
+body.colorful-folders-subtle .nav-files-container > div > .nav-folder {
+  border-radius: var(--radius-m);
+}
+body.colorful-folders-subtle .nav-files-container > div > .nav-folder:nth-child(8n+2) {
+  background-color: var(--nav-folder-1-bg-color);
+}
+body.colorful-folders-subtle .nav-files-container > div > .nav-folder:nth-child(8n+3) {
+  background-color: var(--nav-folder-2-bg-color);
+}
+body.colorful-folders-subtle .nav-files-container > div > .nav-folder:nth-child(8n+4) {
+  background-color: var(--nav-folder-3-bg-color);
+}
+body.colorful-folders-subtle .nav-files-container > div > .nav-folder:nth-child(8n+5) {
+  background-color: var(--nav-folder-4-bg-color);
+}
+body.colorful-folders-subtle .nav-files-container > div > .nav-folder:nth-child(8n+6) {
+  background-color: var(--nav-folder-5-bg-color);
+}
+body.colorful-folders-subtle .nav-files-container > div > .nav-folder:nth-child(8n+7) {
+  background-color: var(--nav-folder-6-bg-color);
+}
+body.colorful-folders-subtle .nav-files-container > div > .nav-folder:nth-child(8n+8) {
+  background-color: var(--nav-folder-7-bg-color);
+}
+body.colorful-folders-subtle .nav-files-container > div > .nav-folder:nth-child(8n+9) {
+  background-color: var(--nav-folder-8-bg-color);
+}
+
+body.colorful-folders_text .nav-folder-children > .nav-folder:nth-child(8n+2),
+body.colorful-folders_text .nav-files-container > div > .nav-folder:nth-child(8n+2) {
+  --nav-folder-color: var(--nav-folder-1-color);
+  --nav-folder-bg-color-hover: var(--nav-folder-1-bg-color-hover);
+}
+body.colorful-folders_text .nav-folder-children > .nav-folder:nth-child(8n+3),
+body.colorful-folders_text .nav-files-container > div > .nav-folder:nth-child(8n+3) {
+  --nav-folder-color: var(--nav-folder-2-color);
+  --nav-folder-bg-color-hover: var(--nav-folder-2-bg-color-hover);
+}
+body.colorful-folders_text .nav-folder-children > .nav-folder:nth-child(8n+4),
+body.colorful-folders_text .nav-files-container > div > .nav-folder:nth-child(8n+4) {
+  --nav-folder-color: var(--nav-folder-3-color);
+  --nav-folder-bg-color-hover: var(--nav-folder-3-bg-color-hover);
+}
+body.colorful-folders_text .nav-folder-children > .nav-folder:nth-child(8n+5),
+body.colorful-folders_text .nav-files-container > div > .nav-folder:nth-child(8n+5) {
+  --nav-folder-color: var(--nav-folder-4-color);
+  --nav-folder-bg-color-hover: var(--nav-folder-4-bg-color-hover);
+}
+body.colorful-folders_text .nav-folder-children > .nav-folder:nth-child(8n+6),
+body.colorful-folders_text .nav-files-container > div > .nav-folder:nth-child(8n+6) {
+  --nav-folder-color: var(--nav-folder-5-color);
+  --nav-folder-bg-color-hover: var(--nav-folder-5-bg-color-hover);
+}
+body.colorful-folders_text .nav-folder-children > .nav-folder:nth-child(8n+7),
+body.colorful-folders_text .nav-files-container > div > .nav-folder:nth-child(8n+7) {
+  --nav-folder-color: var(--nav-folder-6-color);
+  --nav-folder-bg-color-hover: var(--nav-folder-6-bg-color-hover);
+}
+body.colorful-folders_text .nav-folder-children > .nav-folder:nth-child(8n+8),
+body.colorful-folders_text .nav-files-container > div > .nav-folder:nth-child(8n+8) {
+  --nav-folder-color: var(--nav-folder-7-color);
+  --nav-folder-bg-color-hover: var(--nav-folder-7-bg-color-hover);
+}
+body.colorful-folders_text .nav-folder-children > .nav-folder:nth-child(8n+9),
+body.colorful-folders_text .nav-files-container > div > .nav-folder:nth-child(8n+9) {
+  --nav-folder-color: var(--nav-folder-8-color);
+  --nav-folder-bg-color-hover: var(--nav-folder-8-bg-color-hover);
+}
+
+body.colorful-folders_indentation-guide .nav-folder-children > .nav-folder:nth-child(8n+2),
+body.colorful-folders_indentation-guide .nav-files-container > div > .nav-folder:nth-child(8n+2) {
+  --nav-indentation-guide-color: var(--nav-folder-1-indent-color);
+}
+body.colorful-folders_indentation-guide .nav-folder-children > .nav-folder:nth-child(8n+3),
+body.colorful-folders_indentation-guide .nav-files-container > div > .nav-folder:nth-child(8n+3) {
+  --nav-indentation-guide-color: var(--nav-folder-2-indent-color);
+}
+body.colorful-folders_indentation-guide .nav-folder-children > .nav-folder:nth-child(8n+4),
+body.colorful-folders_indentation-guide .nav-files-container > div > .nav-folder:nth-child(8n+4) {
+  --nav-indentation-guide-color: var(--nav-folder-3-indent-color);
+}
+body.colorful-folders_indentation-guide .nav-folder-children > .nav-folder:nth-child(8n+5),
+body.colorful-folders_indentation-guide .nav-files-container > div > .nav-folder:nth-child(8n+5) {
+  --nav-indentation-guide-color: var(--nav-folder-4-indent-color);
+}
+body.colorful-folders_indentation-guide .nav-folder-children > .nav-folder:nth-child(8n+6),
+body.colorful-folders_indentation-guide .nav-files-container > div > .nav-folder:nth-child(8n+6) {
+  --nav-indentation-guide-color: var(--nav-folder-5-indent-color);
+}
+body.colorful-folders_indentation-guide .nav-folder-children > .nav-folder:nth-child(8n+7),
+body.colorful-folders_indentation-guide .nav-files-container > div > .nav-folder:nth-child(8n+7) {
+  --nav-indentation-guide-color: var(--nav-folder-6-indent-color);
+}
+body.colorful-folders_indentation-guide .nav-folder-children > .nav-folder:nth-child(8n+8),
+body.colorful-folders_indentation-guide .nav-files-container > div > .nav-folder:nth-child(8n+8) {
+  --nav-indentation-guide-color: var(--nav-folder-7-indent-color);
+}
+body.colorful-folders_indentation-guide .nav-folder-children > .nav-folder:nth-child(8n+9),
+body.colorful-folders_indentation-guide .nav-files-container > div > .nav-folder:nth-child(8n+9) {
+  --nav-indentation-guide-color: var(--nav-folder-8-indent-color);
+}
+
+body.colorful-folders_inherit-color .nav-files-container .nav-folder.nav-folder .nav-folder {
+  --nav-folder-color: inherit;
+  --nav-folder-bg-color: inherit;
+  --nav-folder-bg-color-hover: inherit;
+  --nav-folder-collapse-color: inherit;
+  --nav-indentation-guide-color: inherit;
+}
+
+body.alt-folder-icons.is-mobile .nav-folder .tree-item-icon svg.right-triangle, body.alt-folder-icons.is-tablet .nav-folder .tree-item-icon svg.right-triangle {
+  width: var(--mobile-folder-icon-size);
+  height: var(--mobile-folder-icon-size);
+}
+body.alt-folder-icons .nav-folder .tree-item-icon svg.right-triangle {
+  width: calc(var(--icon-size) - 1px);
+  height: calc(var(--icon-size) - 1px);
+  stroke-width: var(--icon-stroke);
+  background: currentColor;
+}
+body.alt-folder-icons .nav-folder .tree-item-icon svg.right-triangle path {
+  color: transparent;
+}
+body.alt-folder-icons .nav-folder .tree-item-icon.is-collapsed svg.right-triangle {
+  transform: unset;
+  -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
+}
+body.alt-folder-icons .nav-folder .tree-item-icon:not(.is-collapsed) svg.right-triangle {
+  transform: unset;
+  -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
+}
+body.alt-folder-icons .workspace-leaf-content[data-type=file-explorer] .nav-file-title::before {
+  -webkit-mask-image: url("data:image/svg+xml,%3C?xml version='1.0' encoding='UTF-8'?%3E%3Csvg viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M40 27V6C40 4.89543 39.1046 4 38 4H10C8.89543 4 8 4.89543 8 6V42C8 43.1046 8.89543 44 10 44H21' stroke='%23fff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M17 12L31 12' stroke='%23fff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M17 20L31 20' stroke='%23fff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M17 28H23' stroke='%23fff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M37 37C37 38.3807 36.4404 39.6307 35.5355 40.5355C34.6307 41.4404 33.3807 42 32 42C29.2386 42 27 39.7614 27 37C27 34.2386 29.2386 32 32 32C34.7614 32 37 34.2386 37 37Z' fill='%232F88FF'/%3E%3Cpath d='M39 44L35.5355 40.5355M35.5355 40.5355C36.4404 39.6307 37 38.3807 37 37C37 34.2386 34.7614 32 32 32C29.2386 32 27 34.2386 27 37C27 39.7614 29.2386 42 32 42C33.3807 42 34.6307 41.4404 35.5355 40.5355Z' stroke='%23fff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+body.alt-folder-icons .workspace-leaf-content[data-type=file-explorer] :is(.nav-file-title, .nav-folder.mod-root > .nav-folder-title)::before {
+  content: " ";
+  position: absolute;
+  margin-left: calc(-1 * var(--size-4-5));
+  width: var(--size-4-4);
+  height: var(--size-4-4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: var(--icon-opacity);
+  background-color: currentColor;
+  flex: 0 0 auto;
+}
+
+body {
+  --color-alpha-red: rgb(var(--color-red-rgb), 0.3);
+  --color-alpha-orange: rgb(var(--color-orange-rgb), 0.3);
+  --color-alpha-yellow: rgb(var(--color-yellow-rgb), 0.3);
+  --color-alpha-green: rgb(var(--color-green-rgb), 0.3);
+  --color-alpha-cyan: rgb(var(--color-cyan-rgb), 0.3);
+  --color-alpha-blue: rgb(var(--color-blue-rgb), 0.3);
+  --color-alpha-purple: rgb(var(--color-purple-rgb), 0.3);
+  --color-alpha-pink: rgb(var(--color-pink-rgb), 0.3);
+}
+
+.theme-light {
+  --nav-folder-1-color: color-mix(in srgb,
+      var(--color-red) 60%,
+      var(--text-normal));
+  --nav-folder-1-bg-color: color-mix(in srgb,
+      var(--color-alpha-red) 60%,
+      transparent);
+  --nav-folder-1-bg-color-hover: color-mix(in srgb,
+      var(--nav-folder-1-bg-color) 70%,
+      transparent);
+  --nav-folder-1-collapse-color: color-mix(in srgb,
+      var(--nav-folder-1-color) 50%,
+      transparent);
+  --nav-folder-1-indent-color: color-mix(in srgb,
+      var(--nav-folder-1-color) 25%,
+      transparent);
+  --nav-folder-2-color: color-mix(in srgb,
+      var(--color-orange) 60%,
+      var(--text-normal));
+  --nav-folder-2-bg-color: color-mix(in srgb,
+      var(--color-alpha-orange) 60%,
+      transparent);
+  --nav-folder-2-bg-color-hover: color-mix(in srgb,
+      var(--nav-folder-2-bg-color) 70%,
+      transparent);
+  --nav-folder-2-collapse-color: color-mix(in srgb,
+      var(--nav-folder-2-color) 50%,
+      transparent);
+  --nav-folder-2-indent-color: color-mix(in srgb,
+      var(--nav-folder-2-color) 25%,
+      transparent);
+  --nav-folder-3-color: color-mix(in srgb,
+      var(--color-yellow) 60%,
+      var(--text-normal));
+  --nav-folder-3-bg-color: color-mix(in srgb,
+      var(--color-alpha-yellow) 60%,
+      transparent);
+  --nav-folder-3-bg-color-hover: color-mix(in srgb,
+      var(--nav-folder-3-bg-color) 70%,
+      transparent);
+  --nav-folder-3-collapse-color: color-mix(in srgb,
+      var(--nav-folder-3-color) 50%,
+      transparent);
+  --nav-folder-3-indent-color: color-mix(in srgb,
+      var(--nav-folder-3-color) 25%,
+      transparent);
+  --nav-folder-4-color: color-mix(in srgb,
+      var(--color-green) 60%,
+      var(--text-normal));
+  --nav-folder-4-bg-color: color-mix(in srgb,
+      var(--color-alpha-green) 60%,
+      transparent);
+  --nav-folder-4-bg-color-hover: color-mix(in srgb,
+      var(--nav-folder-4-bg-color) 70%,
+      transparent);
+  --nav-folder-4-collapse-color: color-mix(in srgb,
+      var(--nav-folder-4-color) 50%,
+      transparent);
+  --nav-folder-4-indent-color: color-mix(in srgb,
+      var(--nav-folder-4-color) 25%,
+      transparent);
+  --nav-folder-5-color: color-mix(in srgb,
+      var(--color-cyan) 60%,
+      var(--text-normal));
+  --nav-folder-5-bg-color: color-mix(in srgb,
+      var(--color-alpha-cyan) 60%,
+      transparent);
+  --nav-folder-5-bg-color-hover: color-mix(in srgb,
+      var(--nav-folder-5-bg-color) 70%,
+      transparent);
+  --nav-folder-5-collapse-color: color-mix(in srgb,
+      var(--nav-folder-5-color) 50%,
+      transparent);
+  --nav-folder-5-indent-color: color-mix(in srgb,
+      var(--nav-folder-5-color) 25%,
+      transparent);
+  --nav-folder-6-color: color-mix(in srgb,
+      var(--color-blue) 60%,
+      var(--text-normal));
+  --nav-folder-6-bg-color: color-mix(in srgb,
+      var(--color-alpha-blue) 60%,
+      transparent);
+  --nav-folder-6-bg-color-hover: color-mix(in srgb,
+      var(--nav-folder-6-bg-color) 70%,
+      transparent);
+  --nav-folder-6-collapse-color: color-mix(in srgb,
+      var(--nav-folder-6-color) 50%,
+      transparent);
+  --nav-folder-6-indent-color: color-mix(in srgb,
+      var(--nav-folder-6-color) 25%,
+      transparent);
+  --nav-folder-7-color: color-mix(in srgb,
+      var(--color-purple) 60%,
+      var(--text-normal));
+  --nav-folder-7-bg-color: color-mix(in srgb,
+      var(--color-alpha-purple) 60%,
+      transparent);
+  --nav-folder-7-bg-color-hover: color-mix(in srgb,
+      var(--nav-folder-7-bg-color) 70%,
+      transparent);
+  --nav-folder-7-collapse-color: color-mix(in srgb,
+      var(--nav-folder-7-color) 50%,
+      transparent);
+  --nav-folder-7-indent-color: color-mix(in srgb,
+      var(--nav-folder-7-color) 25%,
+      transparent);
+  --nav-folder-8-color: color-mix(in srgb,
+      var(--color-pink) 60%,
+      var(--text-normal));
+  --nav-folder-8-bg-color: color-mix(in srgb,
+      var(--color-alpha-pink) 60%,
+      transparent);
+  --nav-folder-8-bg-color-hover: color-mix(in srgb,
+      var(--nav-folder-8-bg-color) 70%,
+      transparent);
+  --nav-folder-8-collapse-color: color-mix(in srgb,
+      var(--nav-folder-8-color) 50%,
+      transparent);
+  --nav-folder-8-indent-color: color-mix(in srgb,
+      var(--nav-folder-8-color) 25%,
+      transparent);
+}
+
+.theme-dark {
+  --nav-folder-1-color: var(--color-red);
+  --nav-folder-1-bg-color: color-mix(in srgb,
+      var(--color-alpha-red) 40%,
+      transparent);
+  --nav-folder-1-bg-color-hover: color-mix(in srgb,
+      var(--nav-folder-1-bg-color) 70%,
+      transparent);
+  --nav-folder-1-collapse-color: color-mix(in srgb,
+      var(--nav-folder-1-color) 70%,
+      transparent);
+  --nav-folder-1-indent-color: color-mix(in srgb,
+      var(--nav-folder-1-color) 25%,
+      transparent);
+  --nav-folder-2-color: var(--color-orange);
+  --nav-folder-2-bg-color: color-mix(in srgb,
+      var(--color-alpha-orange) 40%,
+      transparent);
+  --nav-folder-2-bg-color-hover: color-mix(in srgb,
+      var(--nav-folder-2-bg-color) 70%,
+      transparent);
+  --nav-folder-2-collapse-color: color-mix(in srgb,
+      var(--nav-folder-2-color) 70%,
+      transparent);
+  --nav-folder-2-indent-color: color-mix(in srgb,
+      var(--nav-folder-2-color) 25%,
+      transparent);
+  --nav-folder-3-color: var(--color-yellow);
+  --nav-folder-3-bg-color: color-mix(in srgb,
+      var(--color-alpha-yellow) 40%,
+      transparent);
+  --nav-folder-3-bg-color-hover: color-mix(in srgb,
+      var(--nav-folder-3-bg-color) 70%,
+      transparent);
+  --nav-folder-3-collapse-color: color-mix(in srgb,
+      var(--nav-folder-3-color) 70%,
+      transparent);
+  --nav-folder-3-indent-color: color-mix(in srgb,
+      var(--nav-folder-3-color) 25%,
+      transparent);
+  --nav-folder-4-color: var(--color-green);
+  --nav-folder-4-bg-color: color-mix(in srgb,
+      var(--color-alpha-green) 40%,
+      transparent);
+  --nav-folder-4-bg-color-hover: color-mix(in srgb,
+      var(--nav-folder-4-bg-color) 70%,
+      transparent);
+  --nav-folder-4-collapse-color: color-mix(in srgb,
+      var(--nav-folder-4-color) 70%,
+      transparent);
+  --nav-folder-4-indent-color: color-mix(in srgb,
+      var(--nav-folder-4-color) 25%,
+      transparent);
+  --nav-folder-5-color: var(--color-cyan);
+  --nav-folder-5-bg-color: color-mix(in srgb,
+      var(--color-alpha-cyan) 40%,
+      transparent);
+  --nav-folder-5-bg-color-hover: color-mix(in srgb,
+      var(--nav-folder-5-bg-color) 70%,
+      transparent);
+  --nav-folder-5-collapse-color: color-mix(in srgb,
+      var(--nav-folder-5-color) 70%,
+      transparent);
+  --nav-folder-5-indent-color: color-mix(in srgb,
+      var(--nav-folder-5-color) 25%,
+      transparent);
+  --nav-folder-6-color: var(--color-blue);
+  --nav-folder-6-bg-color: color-mix(in srgb,
+      var(--color-alpha-blue) 40%,
+      transparent);
+  --nav-folder-6-bg-color-hover: color-mix(in srgb,
+      var(--nav-folder-6-bg-color) 70%,
+      transparent);
+  --nav-folder-6-collapse-color: color-mix(in srgb,
+      var(--nav-folder-6-color) 70%,
+      transparent);
+  --nav-folder-6-indent-color: color-mix(in srgb,
+      var(--nav-folder-6-color) 25%,
+      transparent);
+  --nav-folder-7-color: var(--color-purple);
+  --nav-folder-7-bg-color: color-mix(in srgb,
+      var(--color-alpha-purple) 40%,
+      transparent);
+  --nav-folder-7-bg-color-hover: color-mix(in srgb,
+      var(--nav-folder-7-bg-color) 70%,
+      transparent);
+  --nav-folder-7-collapse-color: color-mix(in srgb,
+      var(--nav-folder-7-color) 70%,
+      transparent);
+  --nav-folder-7-indent-color: color-mix(in srgb,
+      var(--nav-folder-7-color) 25%,
+      transparent);
+  --nav-folder-8-color: var(--color-pink);
+  --nav-folder-8-bg-color: color-mix(in srgb,
+      var(--color-alpha-pink) 40%,
+      transparent);
+  --nav-folder-8-bg-color-hover: color-mix(in srgb,
+      var(--nav-folder-8-bg-color) 70%,
+      transparent);
+  --nav-folder-8-collapse-color: color-mix(in srgb,
+      var(--nav-folder-8-color) 70%,
+      transparent);
+  --nav-folder-8-indent-color: color-mix(in srgb,
+      var(--nav-folder-8-color) 25%,
+      transparent);
+}
+
 /* https://discord.com/channels/686053708261228577/702656734631821413/1324464778256580720 */
 body {
   --kbd-body-color: color-mix(
@@ -1282,7 +2387,7 @@ body:not(.is-mobile) .metadata-container {
   position: relative;
   max-width: var(--metadata-max-width);
   margin-block-end: var(--p-spacing);
-  box-shadow: var(--shadow-s);
+  break-inside: avoid;
 }
 @container metadata (width > 600px) {
   body:not(.is-mobile) .metadata-content:not(body.is-grabbing .metadata-content:hover) {
@@ -1973,6 +3078,10 @@ body:not(.is-mobile).workspace-split.mod-root {
   background-color: var(--background-secondary);
 }
 
+body .workspace-split .workspace-tabs.mod-stacked.mod-top {
+  background-color: var(--background-primary);
+}
+
 div.prompt-results {
   margin-top: 0;
   padding: 2px;
@@ -1988,6 +3097,273 @@ body {
 
 .modal {
   border: none;
+}
+
+/* @settings
+name: Defult Background
+id: anuppuccin-custom-background
+settings:
+
+-
+  id: anp-custom-background-header
+  title: Background
+  description: 适用于默认主题，配合卡片布局效果更佳
+  type: heading
+  level: 1
+  collapsed: true
+-
+  id: custom-background-image-toggle
+  title: Enable Custom Background (WIP)
+  description: Not compatible with colorful frame
+  type: class-toggle
+-
+  id: anp-custom-background-light-header
+  title: Light Mode
+  description: 
+  type: heading
+  level: 2
+  collapsed: true
+-
+  id: anp-background-image-light
+  title: Custom Background Image URL
+  description: 'Formatted as url("https://link-to-image.png")'
+  type: variable-text
+  default: url("https://link-to-image.png")
+-
+  id: anp-custom-bg-brightness-light
+  title: Background brightness
+  type: variable-number-slider
+  min: 0
+  max: 2
+  step: 0.05
+  default: 0.7
+-
+  id: anp-custom-bg-blur-light
+  title: Background blur
+  type: variable-number-slider
+  min: 0
+  max: 20
+  step: 1
+  default: 5
+  format: px
+-
+  id: anp-custom-bg-card-fg-opacity-light
+  title: Container opacity
+  type: variable-number-slider
+  min: 0
+  max: 1
+  step: 0.05
+  default: 0.7
+
+-
+  id: anp-custom-background-dark-header
+  title: Dark Mode
+  description: 
+  type: heading
+  level: 2
+  collapsed: true
+-
+  id: anp-background-image-dark
+  title: Custom Background Image URL
+  description: 'Formatted as url("https://link-to-image.png")'
+  type: variable-text
+  default: url("https://link-to-image.png")
+-
+  id: anp-custom-bg-brightness-dark
+  title: Background brightness
+  type: variable-number-slider
+  min: 0
+  max: 1
+  step: 0.05
+  default: 0.7
+-
+  id: anp-custom-bg-blur-dark
+  title: Background blur
+  type: variable-number-slider
+  min: 0
+  max: 20
+  step: 1
+  default: 5
+  format: px
+-
+  id: anp-custom-bg-card-fg-opacity-dark
+  title: Container opacity
+  type: variable-number-slider
+  min: 0
+  max: 1
+  step: 0.05
+  default: 0.4
+*/
+body.theme-light {
+  --anp-background-image: var(--anp-background-image-light);
+  --anp-custom-bg-brightness: var(--anp-custom-bg-brightness-light);
+  --anp-custom-bg-blur: var(--anp-custom-bg-blur-light);
+  --anp-custom-bg-card-fg-opacity: var(--anp-custom-bg-card-fg-opacity-light);
+  --background-base: var(--mono-rgb-0);
+  --background-mantel: var(--mono-rgb-100);
+}
+
+body.theme-dark {
+  --anp-background-image: var(--anp-background-image-dark);
+  --anp-custom-bg-brightness: var(--anp-custom-bg-brightness-dark);
+  --anp-custom-bg-blur: var(--anp-custom-bg-blur-dark);
+  --anp-custom-bg-card-fg-opacity: var(--anp-custom-bg-card-fg-opacity-dark);
+  --background-base: var(--mono-rgb-0);
+  --background-mantel: var(--mono-rgb-100);
+}
+
+.custom-background-image-toggle {
+  --card-background-color: transparent;
+  --card-foreground-color: rgba(var(--background-base),
+      var(--anp-custom-bg-card-fg-opacity, 0.4));
+  --tab-inactive-color: rgba(var(--background-mantle),
+      var(--anp-custom-bg-card-fg-opacity, 0.8));
+  --code-background: var(--card-foreground-color);
+  /* ====================== */
+  /* ====================== layout-frame ====================== */
+}
+.custom-background-image-toggle .app-container {
+  background: var(--anp-background-image, url("https://w.wallhaven.cc/full/4x/wallhaven-4xvrmz.jpg"));
+  background-size: cover;
+  background-color: transparent;
+}
+.custom-background-image-toggle .horizontal-main-container {
+  backdrop-filter: brightness(var(--anp-custom-bg-brightness, 0.5)) blur(var(--anp-custom-bg-blur, 5px));
+  background-color: transparent;
+}
+.custom-background-image-toggle .workspace {
+  background: transparent;
+}
+.custom-background-image-toggle .workspace .workspace-split {
+  background-color: var(--tab-inactive-color);
+}
+.custom-background-image-toggle .workspace-tabs:not(.mod-stacked) {
+  --tab-background: var(--tab-inactive-color);
+  --tab-background-active: var(--card-foreground-color);
+  --tab-background-inactive: var(--tab-inactive-color);
+}
+.custom-background-image-toggle .nav-folder.mod-root > .nav-folder-title {
+  background-color: var(--tab-inactive-color);
+}
+.custom-background-image-toggle .workspace-split.mod-root .view-content, .custom-background-image-toggle .workspace-ribbon, .custom-background-image-toggle .workspace-ribbon.mod-left:before, .custom-background-image-toggle .view-header, .custom-background-image-toggle.is-focused .workspace-leaf.mod-active .view-header {
+  background-color: var(--card-foreground-color);
+}
+.custom-background-image-toggle.is-focused .workspace-leaf.mod-active .view-header,
+.custom-background-image-toggle .workspace-ribbon {
+  background: transparent;
+}
+.custom-background-image-toggle .workspace-fake-target-overlay:not(.is-in-sidebar) .workspace-tabs:not(.mod-stacked) .workspace-leaf,
+.custom-background-image-toggle .mod-root .workspace-tabs:not(.mod-stacked) .workspace-leaf,
+.custom-background-image-toggle .view-header,
+.custom-background-image-toggle .is-focused .workspace-leaf.mod-active .view-header {
+  background-color: transparent;
+}
+.custom-background-image-toggle .view-header-title-container:not(.mod-at-end):after {
+  display: none;
+}
+.custom-background-image-toggle .kanban-plugin .kanban-plugin__lane button:hover {
+  background-color: var(--card-foreground-color);
+}
+.custom-background-image-toggle .status-bar {
+  background: var(--card-foreground-color);
+  backdrop-filter: brightness(var(--anp-custom-bg-brightness, 0.5)) blur(var(--anp-custom-bg-blur, 5px));
+}
+.custom-background-image-toggle:is(.layout-cards) .workspace-tab-header-container {
+  background-color: var(--tab-inactive-color);
+}
+.custom-background-image-toggle:is(.layout-frame) .workspace {
+  background-color: transparent;
+}
+.custom-background-image-toggle:is(.layout-frame) .workspace-ribbon,
+.custom-background-image-toggle:is(.layout-frame) .workspace-split {
+  background-color: var(--card-foreground-color);
+}
+.custom-background-image-toggle:is(.layout-frame) .mod-sidedock .workspace-sidedock-vault-profile {
+  background-color: transparent;
+}
+
+/* 关闭区域背景 */
+.is-hidden-frameless:not(.is-fullscreen).is-focused .titlebar-button-container.mod-right {
+  background-color: transparent;
+}
+
+.is-hidden-frameless:not(.is-fullscreen) .titlebar-button-container.mod-right {
+  background-color: transparent;
+}
+
+body.custom-background-image-toggle:not(.is-mobile) {
+  --lorenz-flow-opacity: var(--anp-custom-bg-card-fg-opacity);
+  --lorenz-flow-primary: rgb(var(--mono-rgb-0), var(--lorenz-flow-opacity));
+  --lorenz-flow-secondary: rgb(var(--mono-rgb-0), var(--lorenz-flow-opacity));
+  --file-header-background-focused: transparent;
+  --file-header-background: transparent;
+  --tab-container-background: transparent;
+  --titlebar-background: transparent;
+  --titlebar-background-focused: transparent;
+}
+body.custom-background-image-toggle:not(.is-mobile) .workspace {
+  padding: 4px;
+  background-color: var(--lorenz-flow-secondary);
+}
+body.custom-background-image-toggle:not(.is-mobile) .workspace-split.mod-root .view-content {
+  background-color: transparent;
+}
+body.custom-background-image-toggle:not(.is-mobile) .workspace-ribbon,
+body.custom-background-image-toggle:not(.is-mobile) .workspace-split {
+  margin: 4px;
+  height: unset;
+  background-color: var(--lorenz-flow-secondary);
+  border-radius: var(--layout-radius);
+  border: 1px solid var(--background-modifier-border-hover);
+  overflow: hidden;
+}
+body.custom-background-image-toggle:not(.is-mobile) .mod-root {
+  overflow: hidden;
+}
+body.custom-background-image-toggle:not(.is-mobile) .workspace-ribbon.mod-left .sidebar-toggle-button {
+  position: relative;
+  display: flex;
+  height: var(--header-height);
+  padding: 8px;
+  width: unset;
+  align-items: center;
+  justify-content: center;
+}
+body.custom-background-image-toggle:not(.is-mobile):not(.mod-macos):not(.tab-top-left-stacked).css-settings-manager .workspace-ribbon.workspace-ribbon.mod-left .sidebar-toggle-button {
+  height: calc(var(--header-height) - 16px);
+}
+body.custom-background-image-toggle:not(.is-mobile).mod-macos .workspace-ribbon.mod-left {
+  padding-top: var(--header-height);
+}
+body.custom-background-image-toggle:not(.is-mobile):not(.mod-macos).is-frameless.is-hidden-frameless .titlebar {
+  height: var(--header-height);
+  top: 8px;
+  right: 8px;
+}
+body.custom-background-image-toggle:not(.is-mobile):not(.mod-macos).is-frameless.is-hidden-frameless .titlebar .titlebar-button-container.mod-right {
+  border-top-right-radius: var(--layout-radius);
+  overflow: hidden;
+}
+body.custom-background-image-toggle:not(.is-mobile) .mod-sidedock .workspace-sidedock-vault-profile {
+  background-color: transparent;
+}
+body.custom-background-image-toggle:not(.is-mobile) .status-bar {
+  right: 8px;
+  bottom: 8px;
+}
+body.custom-background-image-toggle:not(.is-mobile).theme-light.contrast-light-vivid .workspace-ribbon,
+body.custom-background-image-toggle:not(.is-mobile).theme-light.contrast-light-vivid .workspace-split {
+  border-color: #424242;
+}
+body.custom-background-image-toggle:not(.is-mobile).theme-light.contrast-light-vivid .mod-root .workspace-tab-header-container::before {
+  background-color: var(--lorenz-flow-secondary);
+}
+body.custom-background-image-toggle:not(.is-mobile).status-bar-full .workspace {
+  padding-bottom: 0;
+}
+body.custom-background-image-toggle:not(.is-mobile).status-bar-full .workspace .workspace-ribbon,
+body.custom-background-image-toggle:not(.is-mobile).status-bar-full .workspace .workspace-split {
+  margin-bottom: 0;
 }
 
 body {
@@ -2116,7 +3492,7 @@ body {
 mjx-container mjx-utext,
 mjx-container[jax=CHTML] {
   font-family: Times;
-  color: var(--color-red);
+  color: var(--color-orange);
 }
 
 /*──────────────────────────────────────
@@ -2357,6 +3733,7 @@ body {
 
 name: 📦 Ning
 id: ning-editor
+
 settings:
 
   - id: colorscheme-setting
@@ -2378,6 +3755,8 @@ settings:
         value: theme-flexoki-light
       - label: Ember
         value: theme-ember-light
+      - label: Claude
+        value: theme-claude-light
 
   - id: ning-theme-dark
     title: Dark Theme
@@ -2392,6 +3771,12 @@ settings:
         value: theme-flexoki-dark
       - label: Ember
         value: theme-ember-dark
+      - label: Claude
+        value: theme-claude-dark
+      - label: Solarized
+        value: theme-solarized-dark
+      - label: Vscode
+        value: theme-vscode-dark
 
   - id: workspace
     title: Workspace
@@ -2424,5 +3809,51 @@ settings:
         value: heading-indicator-auto
       - label: Fixed
         value: heading-indicator-fixed
+
+  - id: file-explorer
+    title: File Explorer
+    type: heading
+    level: 2
+    collapsed: true
+
+  - id: alt-folder-icons
+    title: 启用文件夹图标
+    description: Use folders as collapse indicators instead of chevrons.
+    type: class-toggle
+
+  - id: colorful-folders_text
+    title: 彩色文件夹文字颜色
+    description: Adds colors to the name text of the folder. When hovered, folder background is colored.
+    type: class-toggle
+
+  - id: colorful-folders_collapse-indicator
+    title: 文件夹折叠指示器启用彩色
+    description: Adds color to the collapse indicators of the folders.
+    type: class-toggle
+
+  - id: folders_background
+    title: 彩色文件夹背景颜色
+    type: class-select
+    allowEmpty: false
+    default: none
+    options:
+      - label: None
+        value: none
+      - label: Default
+        value: colorful-folders_background
+      - label: Subtle
+        value: colorful-folders-subtle
+      - label: Length
+        value: colorful-folders-length
+
+  - id: colorful-folders_indentation-guide
+    title: 文件夹缩进线启用颜色
+    description: Colors folder's indentation guide based on parent folder's color.
+    type: class-toggle
+
+  - id: colorful-folders_inherit-color
+    title: 上下级文件夹颜色继承
+    description: The color cycles through up to 12 colors for both top level folders and subfolders by default. If you would like subfolders to be colored based on their top level folder colors, toggle this on.
+    type: class-toggle
 
 */
