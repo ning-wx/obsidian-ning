@@ -24,6 +24,8 @@ settings:
         value: theme-flexoki-light
       - label: Ember
         value: theme-ember-light
+      - label: Claude
+        value: theme-claude-light
 
   - id: ning-theme-dark
     title: Dark Theme
@@ -38,6 +40,12 @@ settings:
         value: theme-flexoki-dark
       - label: Ember
         value: theme-ember-dark
+      - label: Claude
+        value: theme-claude-dark
+      - label: Solarized
+        value: theme-solarized-dark
+      - label: Vscode
+        value: theme-vscode-dark
 
   - id: workspace
     title: Workspace

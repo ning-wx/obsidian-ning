@@ -25,6 +25,7 @@ body:not(.is-mobile) {
     position: relative;
     max-width: var(--metadata-max-width);
     margin-block-end: var(--p-spacing);
+    break-inside: avoid;
     // &::before {
     //   content: "";
     //   position: absolute;

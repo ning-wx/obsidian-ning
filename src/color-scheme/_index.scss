@@ -1,6 +1,8 @@
 @use "./love";
 @use "./ember";
 @use "./flexoki";
+@use "./claude";
+@use "./solarized";
 
 body {
   --color-gray: rgb(var(--callout-quote));
