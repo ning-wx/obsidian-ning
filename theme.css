@@ -347,65 +347,58 @@
 }
 
 .theme-light.theme-claude-light {
-  /* ── Backgrounds ─────────────────────────────────────────── */
+  --accent-h: 14;
+  --accent-s: 38%;
+  --accent-l: 55%;
   --color-base-00: #faf9f5;
-  /* primary background (warm off-white) */
   --color-base-05: #f5f3ed;
   --color-base-10: #efeee8;
   --color-base-20: #e8e6dc;
-  /* light gray */
   --color-base-25: #dddbd3;
   --color-base-30: #cccac3;
   --color-base-35: #bfbdb6;
   --color-base-40: #b0aea5;
-  /* mid gray */
   --color-base-50: #97958d;
   --color-base-60: #7a7870;
   --color-base-70: #5e5c56;
   --color-base-100: #141413;
-  /* near-black */
-  /* ── Semantic surfaces ───────────────────────────────────── */
-  --background-primary: #faf9f5;
-  --background-primary-alt: #f5f3ed;
-  --background-secondary: #efeee8;
-  --background-secondary-alt: #e8e6dc;
+  --background-primary: rgb(244, 243, 237);
+  --background-primary-alt: rgb(240, 239, 232);
+  --background-secondary: rgb(232, 231, 221);
+  --background-secondary-alt: rgb(236, 235, 228);
   --background-modifier-hover: rgba(20, 20, 19, 0.05);
   --background-modifier-active: rgba(20, 20, 19, 0.08);
   --background-modifier-border: #e8e6dc;
+  --background-modifier-border-hover: rgba(211, 210, 202, 0.6);
   --background-modifier-form-field: #ffffff;
   --background-modifier-box-shadow: rgba(20, 20, 19, 0.12);
-  /* ── Text ────────────────────────────────────────────────── */
-  --text-normal: #141413;
-  --text-muted: #7a7870;
-  --text-faint: #b0aea5;
+  --text-normal: #3d3a2a;
+  --text-muted: rgba(61, 58, 42, 0.8);
+  --text-faint: rgba(61, 58, 42, 0.4);
   --text-on-accent: #faf9f5;
   --text-error: #c0392b;
   --text-accent: #d97757;
-  /* Claude orange */
   --text-accent-hover: #c5673f;
-  /* ── Interactive / accent ───────────────────────────────── */
   --interactive-accent: #d97757;
   --interactive-accent-hover: #c5673f;
   --interactive-accent-rgb: 217, 119, 87;
   --interactive-normal: #efeee8;
   --interactive-hover: #e8e6dc;
   --interactive-muted: #f5f3ed;
-  /* ── Headings ────────────────────────────────────────────── */
   --h1-color: #141413;
   --h2-color: #2e2d2b;
   --h3-color: #d97757;
-  /* orange accent on h3 */
   --h4-color: #5e5c56;
   --h5-color: #7a7870;
   --h6-color: #97958d;
-  /* ── Links ───────────────────────────────────────────────── */
   --link-color: #6a9bcc;
-  /* Claude blue */
   --link-color-hover: #4d85bf;
   --link-unresolved-color: #b0aea5;
   --link-external-color: #6a9bcc;
   /* ── Code ────────────────────────────────────────────────── */
-  --code-background: #efeee8;
+  --inline-code-color: var(--color-purple);
+  --inline-code-bg: rgb(236, 235, 228);
+  --code-background: rgb(240, 239, 232);
   --code-normal: #2e2d2b;
   --code-comment: #97958d;
   --code-function: #d97757;
@@ -416,48 +409,41 @@
   --code-string: #788c5d;
   --code-tag: #d97757;
   --code-value: #6a9bcc;
-  /* ── Callouts ────────────────────────────────────────────── */
-  --callout-default: 106, 155, 204;
-  /* blue */
-  --callout-info: 106, 155, 204;
-  --callout-tip: 120, 140, 93;
-  /* green */
-  --callout-warning: 217, 119, 87;
-  /* orange */
-  --callout-question: 106, 155, 204;
-  --callout-failure: 192, 57, 43;
-  --callout-bug: 192, 57, 43;
-  --callout-success: 120, 140, 93;
+  --color-blue: #3d6578;
+  --color-green: #5c6e2a;
+  --color-orange: #c85a28;
+  --color-red: #a04020;
+  --color-purple: #7a4e3a;
+  --color-cyan: #4a7568;
+  --color-yellow: #b8942a;
+  --color-pink: #bb5a38;
+  --color-blue-rgb: 61, 101, 120;
+  --color-green-rgb: 92, 110, 42;
+  --color-orange-rgb: 200, 90, 40;
+  --color-red-rgb: 160, 64, 32;
+  --color-purple-rgb: 122, 78, 58;
+  --color-pink-rgb: 187, 90, 56;
+  --color-cyan-rgb: 74, 117, 104;
+  --color-yellow-rgb: 184, 148, 42;
   /* ── Scrollbar ───────────────────────────────────────────── */
   --scrollbar-bg: transparent;
   --scrollbar-thumb-bg: #cccac3;
-  /* ── Toggles / checkboxes ───────────────────────────────── */
-  --checkbox-color: #d97757;
-  --checkbox-color-hover: #c5673f;
-  --checkbox-marker-color: #faf9f5;
-  /* ── Borders & dividers ──────────────────────────────────── */
-  --divider-color: #e8e6dc;
-  --divider-color-hover: #dddbd3;
   /* ── Graph view ──────────────────────────────────────────── */
   --graph-node: #d97757;
   --graph-node-unresolved: #b0aea5;
   --graph-node-focused: #6a9bcc;
   --graph-node-tag: #788c5d;
   --graph-node-attachment: #7a7870;
-  --graph-line: #e8e6dc;
+  --graph-line: #dddbd3;
   --graph-line-focused: #d97757;
   /* ── Ribbon / sidebar ────────────────────────────────────── */
   --ribbon-background: #efeee8;
   --ribbon-background-collapsed: #e8e6dc;
+  --metadata-background: rgb(236, 235, 228);
 }
 
-/* ============================================================
-   DARK THEME  (body.theme-dark)
-   ============================================================ */
 .theme-dark.theme-claude-dark {
-  /* ── Backgrounds ─────────────────────────────────────────── */
   --color-base-00: #141413;
-  /* primary background (near-black warm) */
   --color-base-05: #1a1918;
   --color-base-10: #201f1d;
   --color-base-20: #272523;
@@ -469,8 +455,6 @@
   --color-base-60: #97958d;
   --color-base-70: #b0aea5;
   --color-base-100: #faf9f5;
-  /* near-white */
-  /* ── Semantic surfaces ───────────────────────────────────── */
   --background-primary: #141413;
   --background-primary-alt: #1a1918;
   --background-secondary: #201f1d;
@@ -488,6 +472,22 @@
   --text-error: #e74c3c;
   --text-accent: #d97757;
   --text-accent-hover: #e8916d;
+  --color-blue: #7a9aab;
+  --color-green: #8a9a5b;
+  --color-orange: #d97757;
+  --color-red: #c15f3c;
+  --color-purple: #c89ab8;
+  --color-cyan: #a9c9b8;
+  --color-yellow: #e8dcc7;
+  --color-pink: #f0a878;
+  --color-blue-rgb: 122, 154, 171;
+  --color-green-rgb: 138, 154, 91;
+  --color-orange-rgb: 217, 119, 87;
+  --color-red-rgb: 193, 95, 60;
+  --color-purple-rgb: 200, 154, 184;
+  --color-pink-rgb: 240, 168, 120;
+  --color-cyan-rgb: 169, 201, 184;
+  --color-yellow-rgb: 232, 220, 199;
   /* ── Interactive / accent ───────────────────────────────── */
   --interactive-accent: #d97757;
   --interactive-accent-hover: #e8916d;
@@ -502,7 +502,6 @@
   --h4-color: #b0aea5;
   --h5-color: #97958d;
   --h6-color: #7a7870;
-  /* ── Links ───────────────────────────────────────────────── */
   --link-color: #7eaed4;
   --link-color-hover: #9dc0e0;
   --link-unresolved-color: #5e5c56;
@@ -519,25 +518,9 @@
   --code-string: #8fa86e;
   --code-tag: #d97757;
   --code-value: #7eaed4;
-  /* ── Callouts ────────────────────────────────────────────── */
-  --callout-default: 106, 155, 204;
-  --callout-info: 106, 155, 204;
-  --callout-tip: 120, 140, 93;
-  --callout-warning: 217, 119, 87;
-  --callout-question: 106, 155, 204;
-  --callout-failure: 231, 76, 60;
-  --callout-bug: 231, 76, 60;
-  --callout-success: 120, 140, 93;
   /* ── Scrollbar ───────────────────────────────────────────── */
   --scrollbar-bg: transparent;
   --scrollbar-thumb-bg: #3a3835;
-  /* ── Toggles / checkboxes ───────────────────────────────── */
-  --checkbox-color: #d97757;
-  --checkbox-color-hover: #e8916d;
-  --checkbox-marker-color: #141413;
-  /* ── Borders & dividers ──────────────────────────────────── */
-  --divider-color: #272523;
-  --divider-color-hover: #2e2c2a;
   /* ── Graph view ──────────────────────────────────────────── */
   --graph-node: #d97757;
   --graph-node-unresolved: #4a4845;
@@ -546,7 +529,6 @@
   --graph-node-attachment: #7a7870;
   --graph-line: #2e2c2a;
   --graph-line-focused: #d97757;
-  /* ── Ribbon / sidebar ────────────────────────────────────── */
   --ribbon-background: #1a1918;
   --ribbon-background-collapsed: #141413;
 }
@@ -846,15 +828,17 @@ body.theme-solarized-dark {
   --background-secondary-alt: hsl(var(--hsl-neutral-800) / 50%);
   --background-modifier-hover: hsl(var(--hsl-neutral-600) / 40%);
   --background-modifier-border: var(--color-d-gray-90);
-  --background-modifier-border-hover: color-mix(in srgb,
-      var(--color-d-gray-80) 80%,
-      var(--color-d-gray-90));
+  --background-modifier-border-hover: hsl(var(--hsl-neutral-500) / 30%);
   --background-modifier-border-focus: color-mix(in srgb,
       var(--color-d-gray-70) 40%,
       var(--color-d-gray-80));
   --text-normal: var(--color-neutral-400);
   --text-muted: var(--color-neutral-500);
   --text-faint: var(--color-neutral-600);
+  --text-success: hsl(68deg 100% 30%);
+  --text-warning: hsl(46deg 97% 65% / 90%);
+  --text-error: hsl(1deg 90% 64% / 90%);
+  --italic-color: hsl(76deg 100% 49% / 70%);
   --link-color: var(--color-purple);
   --link-color-hover: var(--link-color);
   --link-external-color: var(--color-blue);
@@ -863,7 +847,6 @@ body.theme-solarized-dark {
   --inline-code-color: var(--color-yellow);
   --inline-code-bg: oklch(from var(--color-neutral-700) l c h/0.5);
   --text-highlight-bg: hsl(var(--hsl-pink-500) / 40%);
-  --metadata-background: hsl(var(--hsl-neutral-700) / 50%);
 }
 
 body {
@@ -2373,6 +2356,10 @@ body:not(.is-mobile) {
       color-mix(in lab, var(--art-deco-color), white 20%) 45%,
       color-mix(in lab, var(--art-deco-color), white 40%) 51%,
       color-mix(in lab, var(--art-deco-color), white 7%) 80%);
+  --metadata-border-color: oklch(from var(--color-base-100) l c h/0.1);
+}
+body:not(.is-mobile):is(.theme-solarized-dark) {
+  --metadata-background: hsl(var(--hsl-neutral-700) / 50%);
 }
 
 body:not(.is-mobile) .metadata-container {
@@ -2388,6 +2375,7 @@ body:not(.is-mobile) .metadata-container {
   max-width: var(--metadata-max-width);
   margin-block-end: var(--p-spacing);
   break-inside: avoid;
+  box-shadow: oklch(from var(--color-base-100) l c h/0.1) 0px 2px 8px 0px;
 }
 @container metadata (width > 600px) {
   body:not(.is-mobile) .metadata-content:not(body.is-grabbing .metadata-content:hover) {
@@ -2426,11 +2414,6 @@ body:not(.is-mobile) .workspace > .workspace-split:not(.mod-root) [data-type=mar
   transform: translateY(-50%);
 }
 
-body {
-  --button-accent-shadow-active: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15),
-    inset 0px 0px 0px calc(1px + var(--button-inset-shadow-size)) rgba(0, 0, 0, 0.09);
-}
-
 .cm-hmd-frontmatter.cm-hmd-frontmatter {
   color: var(--text-muted);
 }
@@ -2454,7 +2437,6 @@ body {
 /* 仅作用于中间根区域 */
 .workspace-split.mod-root :is(.metadata-container, .metadata-content, .metadata-properties) {
   --properties-columns: 2;
-  /* 限制链接长度 */
 }
 @container metadata (width >=1200px) and (width < 1600px) {
   .workspace-split.mod-root :is(.metadata-container, .metadata-content, .metadata-properties) {
@@ -2465,17 +2447,6 @@ body {
   .workspace-split.mod-root :is(.metadata-container, .metadata-content, .metadata-properties) {
     --properties-columns: 4;
   }
-}
-
-.cm-active.HyperMD-header-1::before,
-.cm-active:not(.HyperMD-header-1, .HyperMD-codeblock, .HyperMD-quote, .cm-gutterElement)::after {
-  content: "";
-  z-index: -2;
-  inset: -2px -6px;
-  position: absolute;
-  background-color: oklch(from var(--color-base-100) l c h/0.05);
-  border-radius: var(--radius-s);
-  -electron-corner-smoothing: var(--corner-smoothing);
 }
 
 body {
@@ -3004,6 +2975,17 @@ span[data-col-prev][style*="--c:"]::before {
   transform: translate(0, 2px);
 }
 
+.cm-active.HyperMD-header-1::before,
+.cm-active:not(.HyperMD-header-1, .HyperMD-codeblock, .HyperMD-quote, .cm-gutterElement)::after {
+  content: "";
+  z-index: -2;
+  inset: -2px -6px;
+  position: absolute;
+  background-color: oklch(from var(--color-base-100) l c h/0.05);
+  border-radius: var(--radius-s);
+  -electron-corner-smoothing: var(--corner-smoothing);
+}
+
 body.layout-frame:not(.is-mobile, .custom-background-image-toggle) {
   --tab-container-background: transparent;
   --titlebar-background: transparent;
@@ -3100,7 +3082,7 @@ body {
 }
 
 /* @settings
-name: Defult Background
+name: 🖼️ Background Wallpaper
 id: anuppuccin-custom-background
 settings:
 
@@ -3167,7 +3149,7 @@ settings:
   title: Custom Background Image URL
   description: 'Formatted as url("https://link-to-image.png")'
   type: variable-text
-  default: url("https://link-to-image.png")
+  default: url("https://w.wallhaven.cc/full/21/wallhaven-21erl6.png")
 -
   id: anp-custom-bg-brightness-dark
   title: Background brightness
@@ -3175,7 +3157,7 @@ settings:
   min: 0
   max: 1
   step: 0.05
-  default: 0.7
+  default: 0.5
 -
   id: anp-custom-bg-blur-dark
   title: Background blur
@@ -3183,7 +3165,7 @@ settings:
   min: 0
   max: 20
   step: 1
-  default: 5
+  default: 0
   format: px
 -
   id: anp-custom-bg-card-fg-opacity-dark
@@ -3192,7 +3174,7 @@ settings:
   min: 0
   max: 1
   step: 0.05
-  default: 0.4
+  default: 0.6
 */
 body.theme-light {
   --anp-background-image: var(--anp-background-image-light);
@@ -3223,7 +3205,7 @@ body.theme-dark {
   /* ====================== layout-frame ====================== */
 }
 .custom-background-image-toggle .app-container {
-  background: var(--anp-background-image, url("https://w.wallhaven.cc/full/4x/wallhaven-4xvrmz.jpg"));
+  background: var(--anp-background-image, url("https://w.wallhaven.cc/full/21/wallhaven-21erl6.png"));
   background-size: cover;
   background-color: transparent;
 }
@@ -3366,113 +3348,113 @@ body.custom-background-image-toggle:not(.is-mobile).status-bar-full .workspace .
   margin-bottom: 0;
 }
 
-body {
+body:not(.is-mobile) {
   --line-width-wide: 50rem;
   --block-width-wide: min(100cqw, var(--file-line-width) * 1.5);
   --block-width-max: calc(100cqw - (var(--file-margins-x) * 2));
   --block-width-offset: calc(-1 * var(--file-margins-x));
 }
-body .wide {
+body:not(.is-mobile) .wide {
   --file-line-width: min(80cqw, var(--line-width-wide));
 }
-body .max {
+body:not(.is-mobile) .max {
   --file-line-width: 100%;
 }
-body .mod-root .workspace-tab-container,
-body .mod-stacked .workspace-leaf-content {
+body:not(.is-mobile) .mod-root .workspace-tab-container,
+body:not(.is-mobile) .mod-stacked .workspace-leaf-content {
   container-type: inline-size;
 }
-body:is(.table-wide, .table-max) .markdown-preview-sizer > .el-table,
-body:is(.table-wide, .table-max) .markdown-preview-sizer > .el-pre .block-language-dataview,
-body:is(.table-wide, .table-max) .markdown-preview-sizer > .el-pre .block-language-dataviewjs,
-body:is(.table-wide, .table-max) .markdown-preview-sizer > .el-pre .block-language-datacorejsx,
-body:is(.table-wide, .table-max) .cm-content > .cm-table-widget,
-body:is(.table-wide, .table-max) .cm-content > .cm-lang-dataview,
-body:is(.table-wide, .table-max) .cm-content > .cm-lang-dataviewjs,
-body:is(.table-wide, .table-max) .cm-content > .cm-lang-datacorejsx,
-body div:is(.table-wide, .table-max) .markdown-preview-sizer > .el-table,
-body div:is(.table-wide, .table-max) .markdown-preview-sizer > .el-pre .block-language-dataview,
-body div:is(.table-wide, .table-max) .markdown-preview-sizer > .el-pre .block-language-dataviewjs,
-body div:is(.table-wide, .table-max) .markdown-preview-sizer > .el-pre .block-language-datacorejsx,
-body div:is(.table-wide, .table-max) .cm-content > .cm-table-widget,
-body div:is(.table-wide, .table-max) .cm-content > .cm-lang-dataview,
-body div:is(.table-wide, .table-max) .cm-content > .cm-lang-dataviewjs,
-body div:is(.table-wide, .table-max) .cm-content > .cm-lang-datacorejsx {
+body:not(.is-mobile):is(.table-wide, .table-max) .markdown-preview-sizer > .el-table,
+body:not(.is-mobile):is(.table-wide, .table-max) .markdown-preview-sizer > .el-pre .block-language-dataview,
+body:not(.is-mobile):is(.table-wide, .table-max) .markdown-preview-sizer > .el-pre .block-language-dataviewjs,
+body:not(.is-mobile):is(.table-wide, .table-max) .markdown-preview-sizer > .el-pre .block-language-datacorejsx,
+body:not(.is-mobile):is(.table-wide, .table-max) .cm-content > .cm-table-widget,
+body:not(.is-mobile):is(.table-wide, .table-max) .cm-content > .cm-lang-dataview,
+body:not(.is-mobile):is(.table-wide, .table-max) .cm-content > .cm-lang-dataviewjs,
+body:not(.is-mobile):is(.table-wide, .table-max) .cm-content > .cm-lang-datacorejsx,
+body:not(.is-mobile) div:is(.table-wide, .table-max) .markdown-preview-sizer > .el-table,
+body:not(.is-mobile) div:is(.table-wide, .table-max) .markdown-preview-sizer > .el-pre .block-language-dataview,
+body:not(.is-mobile) div:is(.table-wide, .table-max) .markdown-preview-sizer > .el-pre .block-language-dataviewjs,
+body:not(.is-mobile) div:is(.table-wide, .table-max) .markdown-preview-sizer > .el-pre .block-language-datacorejsx,
+body:not(.is-mobile) div:is(.table-wide, .table-max) .cm-content > .cm-table-widget,
+body:not(.is-mobile) div:is(.table-wide, .table-max) .cm-content > .cm-lang-dataview,
+body:not(.is-mobile) div:is(.table-wide, .table-max) .cm-content > .cm-lang-dataviewjs,
+body:not(.is-mobile) div:is(.table-wide, .table-max) .cm-content > .cm-lang-datacorejsx {
   max-width: var(--table-line-max-width);
   width: var(--table-line-width) !important;
   justify-self: center;
   margin-inline: var(--table-line-width-offset) !important;
 }
-body.table-wide,
-body .table-wide {
+body:not(.is-mobile).table-wide,
+body:not(.is-mobile) .table-wide {
   --table-line-max-width: var(--block-width-max);
   --table-line-width: var(--block-width-wide);
 }
-body.table-max,
-body .table-max {
+body:not(.is-mobile).table-max,
+body:not(.is-mobile) .table-max {
   --table-line-max-width: var(--block-width-max);
   --table-line-width: var(--block-width-max);
 }
-body:is(.bases-wide, .bases-max) .markdown-preview-sizer > .el-pre .bases-embed,
-body:is(.bases-wide, .bases-max) .markdown-preview-sizer > .el-p .bases-embed,
-body:is(.bases-wide, .bases-max) .cm-content > .bases-embed,
-body:is(.bases-wide, .bases-max) .cm-content > .cm-lang-base,
-body div:is(.bases-wide, .bases-max) .markdown-preview-sizer > .el-pre .bases-embed,
-body div:is(.bases-wide, .bases-max) .markdown-preview-sizer > .el-p .bases-embed,
-body div:is(.bases-wide, .bases-max) .cm-content > .bases-embed,
-body div:is(.bases-wide, .bases-max) .cm-content > .cm-lang-base {
+body:not(.is-mobile):is(.bases-wide, .bases-max) .markdown-preview-sizer > .el-pre .bases-embed,
+body:not(.is-mobile):is(.bases-wide, .bases-max) .markdown-preview-sizer > .el-p .bases-embed,
+body:not(.is-mobile):is(.bases-wide, .bases-max) .cm-content > .bases-embed,
+body:not(.is-mobile):is(.bases-wide, .bases-max) .cm-content > .cm-lang-base,
+body:not(.is-mobile) div:is(.bases-wide, .bases-max) .markdown-preview-sizer > .el-pre .bases-embed,
+body:not(.is-mobile) div:is(.bases-wide, .bases-max) .markdown-preview-sizer > .el-p .bases-embed,
+body:not(.is-mobile) div:is(.bases-wide, .bases-max) .cm-content > .bases-embed,
+body:not(.is-mobile) div:is(.bases-wide, .bases-max) .cm-content > .cm-lang-base {
   max-width: var(--bases-line-max-width);
   width: var(--bases-line-width) !important;
   justify-self: center;
   margin-inline: var(--bases-line-width-offset) !important;
 }
-body.bases-wide,
-body .bases-wide {
+body:not(.is-mobile).bases-wide,
+body:not(.is-mobile) .bases-wide {
   --bases-line-max-width: var(--block-width-max);
   --bases-line-width: var(--block-width-wide);
 }
-body.bases-max,
-body .bases-max {
+body:not(.is-mobile).bases-max,
+body:not(.is-mobile) .bases-max {
   --bases-line-max-width: var(--block-width-max);
   --bases-line-width: var(--block-width-max);
 }
-body:is(.code-wide, .code-max) .markdown-preview-sizer > .el-pre pre,
-body:is(.code-wide, .code-max) .cm-sizer .cm-content .HyperMD-codeblock,
-body:is(.code-wide, .code-max) .cm-sizer .cm-content .HyperMD-codeblock-begin,
-body:is(.code-wide, .code-max) .cm-sizer .cm-content .HyperMD-codeblock-end,
-body div:is(.code-wide, .code-max) .markdown-preview-sizer > .el-pre pre,
-body div:is(.code-wide, .code-max) .cm-sizer .cm-content .HyperMD-codeblock,
-body div:is(.code-wide, .code-max) .cm-sizer .cm-content .HyperMD-codeblock-begin,
-body div:is(.code-wide, .code-max) .cm-sizer .cm-content .HyperMD-codeblock-end {
+body:not(.is-mobile):is(.code-wide, .code-max) .markdown-preview-sizer > .el-pre pre,
+body:not(.is-mobile):is(.code-wide, .code-max) .cm-sizer .cm-content .HyperMD-codeblock,
+body:not(.is-mobile):is(.code-wide, .code-max) .cm-sizer .cm-content .HyperMD-codeblock-begin,
+body:not(.is-mobile):is(.code-wide, .code-max) .cm-sizer .cm-content .HyperMD-codeblock-end,
+body:not(.is-mobile) div:is(.code-wide, .code-max) .markdown-preview-sizer > .el-pre pre,
+body:not(.is-mobile) div:is(.code-wide, .code-max) .cm-sizer .cm-content .HyperMD-codeblock,
+body:not(.is-mobile) div:is(.code-wide, .code-max) .cm-sizer .cm-content .HyperMD-codeblock-begin,
+body:not(.is-mobile) div:is(.code-wide, .code-max) .cm-sizer .cm-content .HyperMD-codeblock-end {
   max-width: var(--code-line-max-width);
   width: var(--code-line-width) !important;
   justify-self: center;
   margin-inline: var(--code-line-width-offset) !important;
 }
-body.code-wide,
-body .code-wide {
+body:not(.is-mobile).code-wide,
+body:not(.is-mobile) .code-wide {
   --code-line-max-width: var(--block-width-max);
   --code-line-width: var(--block-width-wide);
 }
-body.code-max,
-body .code-max {
+body:not(.is-mobile).code-max,
+body:not(.is-mobile) .code-max {
   --code-line-max-width: var(--block-width-max);
   --code-line-width: var(--block-width-max);
 }
-body:is(.meta-wide, .meta-max) .markdown-preview-sizer .metadata-container,
-body div:is(.meta-wide, .meta-max) .markdown-preview-sizer .metadata-container {
+body:not(.is-mobile):is(.meta-wide, .meta-max) .markdown-preview-sizer .metadata-container,
+body:not(.is-mobile) div:is(.meta-wide, .meta-max) .markdown-preview-sizer .metadata-container {
   max-width: var(--meta-line-max-width);
   width: var(--meta-line-width) !important;
   justify-self: center;
   margin-inline: var(--meta-line-width-offset) !important;
 }
-body.meta-wide,
-body .meta-wide {
+body:not(.is-mobile).meta-wide,
+body:not(.is-mobile) .meta-wide {
   --meta-line-max-width: var(--block-width-max);
   --meta-line-width: var(--block-width-wide);
 }
-body.meta-max,
-body .meta-max {
+body:not(.is-mobile).meta-max,
+body:not(.is-mobile) .meta-max {
   --meta-line-max-width: var(--block-width-max);
   --meta-line-width: var(--block-width-max);
 }
@@ -3713,6 +3695,7 @@ body {
   --prompt-width: calc(var(--file-line-width) - 50px);
   --code-radius: 8px;
   --checkbox-radius: 50%;
+  --checklist-done-decoration: none;
   --tag-radius: 15px;
   --tag-size: 0.8em;
   --tag-padding-y: 0.1em;
@@ -3775,8 +3758,6 @@ settings:
         value: theme-claude-dark
       - label: Solarized
         value: theme-solarized-dark
-      - label: Vscode
-        value: theme-vscode-dark
 
   - id: workspace
     title: Workspace

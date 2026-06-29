@@ -1,44 +1,44 @@
 .theme-light.theme-claude-light {
-  /* ── Backgrounds ─────────────────────────────────────────── */
+  --accent-h: 14;
+  --accent-s: 38%;
+  --accent-l: 55%;
+
   --color-base-00: #faf9f5;
-  /* primary background (warm off-white) */
   --color-base-05: #f5f3ed;
   --color-base-10: #efeee8;
   --color-base-20: #e8e6dc;
-  /* light gray */
   --color-base-25: #dddbd3;
   --color-base-30: #cccac3;
   --color-base-35: #bfbdb6;
   --color-base-40: #b0aea5;
-  /* mid gray */
   --color-base-50: #97958d;
   --color-base-60: #7a7870;
   --color-base-70: #5e5c56;
   --color-base-100: #141413;
-  /* near-black */
 
-  /* ── Semantic surfaces ───────────────────────────────────── */
-  --background-primary: #faf9f5;
-  --background-primary-alt: #f5f3ed;
-  --background-secondary: #efeee8;
-  --background-secondary-alt: #e8e6dc;
+  --background-primary: rgb(244, 243, 237);
+  --background-primary-alt: rgb(240, 239, 232);
+  --background-secondary: rgb(232, 231, 221);
+  --background-secondary-alt: rgb(236, 235, 228);
   --background-modifier-hover: rgba(20, 20, 19, 0.05);
   --background-modifier-active: rgba(20, 20, 19, 0.08);
   --background-modifier-border: #e8e6dc;
+  --background-modifier-border-hover: rgba(211, 210, 202, 0.6);
   --background-modifier-form-field: #ffffff;
   --background-modifier-box-shadow: rgba(20, 20, 19, 0.12);
 
-  /* ── Text ────────────────────────────────────────────────── */
-  --text-normal: #141413;
-  --text-muted: #7a7870;
-  --text-faint: #b0aea5;
+  // --text-normal: #141413;
+  // --text-muted: #7a7870;
+  // --text-faint: #b0aea5;
+
+  --text-normal: #3d3a2a;
+  --text-muted: rgba(61, 58, 42, 0.8);
+  --text-faint: rgba(61, 58, 42, 0.4);
   --text-on-accent: #faf9f5;
   --text-error: #c0392b;
   --text-accent: #d97757;
-  /* Claude orange */
   --text-accent-hover: #c5673f;
 
-  /* ── Interactive / accent ───────────────────────────────── */
   --interactive-accent: #d97757;
   --interactive-accent-hover: #c5673f;
   --interactive-accent-rgb: 217, 119, 87;
@@ -46,24 +46,22 @@
   --interactive-hover: #e8e6dc;
   --interactive-muted: #f5f3ed;
 
-  /* ── Headings ────────────────────────────────────────────── */
   --h1-color: #141413;
   --h2-color: #2e2d2b;
   --h3-color: #d97757;
-  /* orange accent on h3 */
   --h4-color: #5e5c56;
   --h5-color: #7a7870;
   --h6-color: #97958d;
 
-  /* ── Links ───────────────────────────────────────────────── */
   --link-color: #6a9bcc;
-  /* Claude blue */
   --link-color-hover: #4d85bf;
   --link-unresolved-color: #b0aea5;
   --link-external-color: #6a9bcc;
 
   /* ── Code ────────────────────────────────────────────────── */
-  --code-background: #efeee8;
+  --inline-code-color: var(--color-purple);
+  --inline-code-bg: rgb(236, 235, 228);
+  --code-background: rgb(240, 239, 232);
   --code-normal: #2e2d2b;
   --code-comment: #97958d;
   --code-function: #d97757;
@@ -76,31 +74,29 @@
   --code-value: #6a9bcc;
 
 
-  /* ── Callouts ────────────────────────────────────────────── */
-  --callout-default: 106, 155, 204;
-  /* blue */
-  --callout-info: 106, 155, 204;
-  --callout-tip: 120, 140, 93;
-  /* green */
-  --callout-warning: 217, 119, 87;
-  /* orange */
-  --callout-question: 106, 155, 204;
-  --callout-failure: 192, 57, 43;
-  --callout-bug: 192, 57, 43;
-  --callout-success: 120, 140, 93;
+  --color-blue: #3d6578;
+  --color-green: #5c6e2a;
+  --color-orange: #c85a28;
+  --color-red: #a04020;
+  --color-purple: #7a4e3a;
+  --color-cyan: #4a7568;
+  --color-yellow: #b8942a;
+  --color-pink: #bb5a38;
+
+  --color-blue-rgb: 61, 101, 120;
+  --color-green-rgb: 92, 110, 42;
+  --color-orange-rgb: 200, 90, 40;
+  --color-red-rgb: 160, 64, 32;
+  --color-purple-rgb: 122, 78, 58;
+  --color-pink-rgb: 187, 90, 56;
+  --color-cyan-rgb: 74, 117, 104;
+  --color-yellow-rgb: 184, 148, 42;
 
   /* ── Scrollbar ───────────────────────────────────────────── */
   --scrollbar-bg: transparent;
   --scrollbar-thumb-bg: #cccac3;
 
-  /* ── Toggles / checkboxes ───────────────────────────────── */
-  --checkbox-color: #d97757;
-  --checkbox-color-hover: #c5673f;
-  --checkbox-marker-color: #faf9f5;
 
-  /* ── Borders & dividers ──────────────────────────────────── */
-  --divider-color: #e8e6dc;
-  --divider-color-hover: #dddbd3;
 
   /* ── Graph view ──────────────────────────────────────────── */
   --graph-node: #d97757;
@@ -108,21 +104,19 @@
   --graph-node-focused: #6a9bcc;
   --graph-node-tag: #788c5d;
   --graph-node-attachment: #7a7870;
-  --graph-line: #e8e6dc;
+  --graph-line: #dddbd3;
   --graph-line-focused: #d97757;
 
   /* ── Ribbon / sidebar ────────────────────────────────────── */
   --ribbon-background: #efeee8;
   --ribbon-background-collapsed: #e8e6dc;
+
+  --metadata-background: rgb(236, 235, 228);
 }
 
-/* ============================================================
-   DARK THEME  (body.theme-dark)
-   ============================================================ */
+
 .theme-dark.theme-claude-dark {
-  /* ── Backgrounds ─────────────────────────────────────────── */
   --color-base-00: #141413;
-  /* primary background (near-black warm) */
   --color-base-05: #1a1918;
   --color-base-10: #201f1d;
   --color-base-20: #272523;
@@ -134,9 +128,7 @@
   --color-base-60: #97958d;
   --color-base-70: #b0aea5;
   --color-base-100: #faf9f5;
-  /* near-white */
 
-  /* ── Semantic surfaces ───────────────────────────────────── */
   --background-primary: #141413;
   --background-primary-alt: #1a1918;
   --background-secondary: #201f1d;
@@ -156,6 +148,25 @@
   --text-accent: #d97757;
   --text-accent-hover: #e8916d;
 
+
+  --color-blue: #7a9aab;
+  --color-green: #8a9a5b;
+  --color-orange: #d97757;
+  --color-red: #c15f3c;
+  --color-purple: #c89ab8;
+  --color-cyan: #a9c9b8;
+  --color-yellow: #e8dcc7;
+  --color-pink: #f0a878;
+
+  --color-blue-rgb: 122, 154, 171;
+  --color-green-rgb: 138, 154, 91;
+  --color-orange-rgb: 217, 119, 87;
+  --color-red-rgb: 193, 95, 60;
+  --color-purple-rgb: 200, 154, 184;
+  --color-pink-rgb: 240, 168, 120;
+  --color-cyan-rgb: 169, 201, 184;
+  --color-yellow-rgb: 232, 220, 199;
+
   /* ── Interactive / accent ───────────────────────────────── */
   --interactive-accent: #d97757;
   --interactive-accent-hover: #e8916d;
@@ -172,7 +183,6 @@
   --h5-color: #97958d;
   --h6-color: #7a7870;
 
-  /* ── Links ───────────────────────────────────────────────── */
   --link-color: #7eaed4;
   --link-color-hover: #9dc0e0;
   --link-unresolved-color: #5e5c56;
@@ -192,28 +202,10 @@
   --code-value: #7eaed4;
 
 
-  /* ── Callouts ────────────────────────────────────────────── */
-  --callout-default: 106, 155, 204;
-  --callout-info: 106, 155, 204;
-  --callout-tip: 120, 140, 93;
-  --callout-warning: 217, 119, 87;
-  --callout-question: 106, 155, 204;
-  --callout-failure: 231, 76, 60;
-  --callout-bug: 231, 76, 60;
-  --callout-success: 120, 140, 93;
-
   /* ── Scrollbar ───────────────────────────────────────────── */
   --scrollbar-bg: transparent;
   --scrollbar-thumb-bg: #3a3835;
 
-  /* ── Toggles / checkboxes ───────────────────────────────── */
-  --checkbox-color: #d97757;
-  --checkbox-color-hover: #e8916d;
-  --checkbox-marker-color: #141413;
-
-  /* ── Borders & dividers ──────────────────────────────────── */
-  --divider-color: #272523;
-  --divider-color-hover: #2e2c2a;
 
   /* ── Graph view ──────────────────────────────────────────── */
   --graph-node: #d97757;
@@ -224,7 +216,6 @@
   --graph-line: #2e2c2a;
   --graph-line-focused: #d97757;
 
-  /* ── Ribbon / sidebar ────────────────────────────────────── */
   --ribbon-background: #1a1918;
   --ribbon-background-collapsed: #141413;
 }

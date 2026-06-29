@@ -269,7 +269,6 @@ body.theme-solarized-dark {
   --h5-color: var(--color-blue);
   --h6-color: var(--color-purple);
 
-
   --color-d-gray-10: hsla(180deg, 7%, 70%, 1);
   --color-d-gray-20: hsla(186deg, 8%, 65%, 1);
   --color-d-gray-30: hsla(190deg, 9%, 55%, 1);
@@ -316,8 +315,6 @@ body.theme-solarized-dark {
   --color-base-70: var(--color-d-gray-20);
   --color-base-100: var(--color-d-gray-10);
 
-
-
   --background-primary: var(--color-neutral-800);
   --background-primary-alt: var(--color-neutral-700);
 
@@ -325,9 +322,7 @@ body.theme-solarized-dark {
   --background-secondary-alt: hsl(var(--hsl-neutral-800) / 50%);
   --background-modifier-hover: hsl(var(--hsl-neutral-600) / 40%);
   --background-modifier-border: var(--color-d-gray-90);
-  --background-modifier-border-hover: color-mix(in srgb,
-      var(--color-d-gray-80) 80%,
-      var(--color-d-gray-90));
+  --background-modifier-border-hover: hsl(var(--hsl-neutral-500) / 30%);
   --background-modifier-border-focus: color-mix(in srgb,
       var(--color-d-gray-70) 40%,
       var(--color-d-gray-80));
@@ -335,6 +330,11 @@ body.theme-solarized-dark {
   --text-normal: var(--color-neutral-400);
   --text-muted: var(--color-neutral-500);
   --text-faint: var(--color-neutral-600);
+  --text-success: hsl(68deg 100% 30%);
+  --text-warning: hsl(46deg 97% 65% / 90%);
+  --text-error: hsl(1deg 90% 64% / 90%);
+
+  --italic-color: hsl(76deg 100% 49% / 70%);
 
   --link-color: var(--color-purple);
   --link-color-hover: var(--link-color);
@@ -346,5 +346,4 @@ body.theme-solarized-dark {
   --inline-code-bg: oklch(from var(--color-neutral-700) l c h/0.5);
   --text-highlight-bg: hsl(var(--hsl-pink-500) / 40%);
 
-  --metadata-background: hsl(var(--hsl-neutral-700) / 50%);
 }
