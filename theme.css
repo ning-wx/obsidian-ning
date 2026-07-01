@@ -439,7 +439,6 @@
   /* ── Ribbon / sidebar ────────────────────────────────────── */
   --ribbon-background: #efeee8;
   --ribbon-background-collapsed: #e8e6dc;
-  --metadata-background: rgb(236, 235, 228);
 }
 
 .theme-dark.theme-claude-dark {
@@ -2358,6 +2357,9 @@ body:not(.is-mobile) {
       color-mix(in lab, var(--art-deco-color), white 7%) 80%);
   --metadata-border-color: oklch(from var(--color-base-100) l c h/0.1);
 }
+body:not(.is-mobile):is(.theme-light.theme-claude-light) {
+  --metadata-background: rgb(236, 235, 228);
+}
 body:not(.is-mobile):is(.theme-dark.theme-solarized-dark) {
   --metadata-background: hsl(var(--hsl-neutral-700) / 50%);
 }
@@ -3695,6 +3697,7 @@ body {
   --prompt-width: calc(var(--file-line-width) - 50px);
   --code-radius: 8px;
   --checkbox-radius: 50%;
+  --checkbox-size: calc(var(--font-text-size) - 1px);
   --checklist-done-decoration: none;
   --tag-radius: 15px;
   --tag-size: 0.8em;

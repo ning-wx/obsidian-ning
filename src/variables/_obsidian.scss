@@ -26,6 +26,7 @@ body {
   --code-radius: 8px;
 
   --checkbox-radius: 50%;
+  --checkbox-size: calc(var(--font-text-size) - 1px);
   --checklist-done-decoration: none;
 
   // tag
