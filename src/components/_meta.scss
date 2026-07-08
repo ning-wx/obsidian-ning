@@ -14,6 +14,10 @@ body:not(.is-mobile) {
     --metadata-background: rgb(236, 235, 228);
   }
 
+  &:is(.theme-light.theme-ember-light) {
+    --metadata-background: oklch(from var(--background-secondary) l c h/0.4);
+  }
+
   &:is(.theme-dark.theme-solarized-dark) {
     --metadata-background: hsl(var(--hsl-neutral-700) / 50%);
   }
