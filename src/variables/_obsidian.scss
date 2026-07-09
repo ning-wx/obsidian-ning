@@ -2,7 +2,6 @@ body {
   // --file-line-width: 900px;
   --nav-item-size: 14px;
 
-
   --h1-font: "Fraunces 72pt";
   --h2-font: "Fraunces 72pt";
   --h3-font: "Fraunces 72pt";
@@ -10,16 +9,14 @@ body {
   --h5-font: "Fraunces 72pt";
   --h6-font: "Fraunces 72pt";
 
-
   // radius
   --radius-s: 3px;
   --radius-m: 6px;
   --radius-l: 10px;
   --radius-xl: 15px;
 
-  // callout
-  --callout-border-opacity: 0.8;
-  --callout-radius: 6px;
+
+
   --prompt-width: calc(var(--file-line-width) - 50px);
 
   // code
@@ -41,7 +38,6 @@ body {
   --tag-border-color-hover: var(--background-modifier-border-hover);
   --tag-color-hover: var(--text-normal);
 }
-
 
 // .theme-dark {
 //   --shadow-xs: 0 1px 6px rgba(0, 0, 0, 0.045), 0 4px 24px rgba(0, 0, 0, 0.195), var(--shadow-edges);

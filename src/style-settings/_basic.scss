@@ -77,6 +77,25 @@ settings:
       - label: Fixed
         value: heading-indicator-fixed
 
+  - id: callout-options
+    title: Callouts
+    type: heading
+    level: 2
+    collapsed: true
+
+  -   id: callout-style
+      title: Callout Style
+      type: class-select
+      allowEmpty: false
+      default: callout-normal
+      options:
+          -   label: Default
+              value: callout-normal
+          -   label: Bordered
+              value: callout-bordered
+          -   label: Card
+              value: callout-floating 
+
   - id: file-explorer
     title: File Explorer
     type: heading

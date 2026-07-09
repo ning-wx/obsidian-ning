@@ -1,4 +1,6 @@
 .callout {
+  --callout-border-opacity: 0.8;
+  --callout-radius: var(--radius-m);
   --callout-bug: var(--color-red-rgb);
   --callout-default: var(--color-blue-rgb);
   --callout-error: var(--color-red-rgb);
@@ -13,28 +15,60 @@
   --callout-todo: var(--color-blue-rgb);
   --callout-warning: var(--color-orange-rgb);
   --callout-quote: 158, 158, 158;
-  border: 1.5px solid rgba(var(--callout-color), 0.2);
-}
 
+  body:not(.callout-bordered) & {
+    border: 1.5px solid rgba(var(--callout-color), 0.15);
+  }
+}
 
 .callout-floating .callout,
 .callout-floating .markdown-source-view.mod-cm6 .callout {
   margin: 13px 0px;
-  border-radius: var(--radius-m);
   border: 1.2px solid rgba(var(--callout-color), 0.4);
   box-shadow: var(--shadow-s);
   background-color: transparent;
   padding: 0px;
 
-  >.callout-title,
-  >.markdown-source-view.mod-cm6 .callout-title {
+  > .callout-title,
+  > .markdown-source-view.mod-cm6 .callout-title {
     background-color: rgba(var(--callout-color), 0.2);
     padding: 10px;
     min-width: 100%;
   }
 
-  >.callout-content,
-  >.markdown-source-view.mod-cm6 .callout-content {
+  > .callout-content,
+  > .markdown-source-view.mod-cm6 .callout-content {
     padding: 0px 10px;
+  }
+}
+
+.callout-bordered .callout {
+  // border-top-left-radius: 2px;
+  // border-bottom-left-radius: 2px;
+  border-radius: 4px;
+  --callout-border-width: 0 0 0 4px;
+  --callout-border-opacity: 1;
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
+    var(--size-4-6);
+  --callout-blend-mode: var(--highlight-mix-blend-mode);
+  --callout-title-color: inherit;
+  --callout-title-padding: 0;
+  --callout-title-size: inherit;
+  --callout-content-padding: 0;
+  --callout-content-background: transparent;
+
+  box-shadow: 0 1px 3px oklch(from var(--color-base-100) l c h/0.1);
+
+  > .callout-title {
+    align-items: center;
+
+    > .callout-icon {
+      align-items: center;
+    }
+
+    > .callout-title-inner {
+      text-transform: uppercase;
+      font-weight: normal;
+    }
   }
 }
